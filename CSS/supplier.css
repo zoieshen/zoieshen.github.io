@@ -1,0 +1,181 @@
+.book-wrapper{
+    min-width:1200px;
+    overflow:hidden;
+    background-color: #e5e5e5;
+}
+.book-banner{
+    margin: 0 auto;
+    text-align: center;
+}
+.list-pic{
+    position: relative;
+    height: 470px;
+    width: 100%;
+    overflow: hidden;
+}
+.list-pic ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.book-box{
+    margin: 0 auto;
+}
+.book-content{
+    padding: 40px 0 10px 0;
+    margin: 40px auto 0;
+    position: relative;
+    border:1px solid #c9c9c9;
+    background-color: #fff;
+    border-radius:5px;
+}
+.book-title{
+    position: absolute;
+    left: 480px;
+    top: -14px;
+    width: 243px;
+    height: 63px;
+    background: url('../images/img/sprites3.jpg') no-repeat;
+}
+.b-icon2{
+    background: url('../images/img/sprites3.jpg') 0 -64px no-repeat;
+}
+.b-icon3{
+    background-position: 0 -127px;
+}
+.b-icon4{
+    background-position: 0 -191px;
+}
+.b-icon5{
+    background-position: 0 -255px;
+}
+.b-icon6{
+    background-position: left bottom;
+}
+.book-con{
+    border-top: 1px solid #bdbdbd;
+    text-align: center;
+    width: 1095px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.b-icon1 .book-con img{
+    margin: 20px auto;
+}
+.book-con a{
+    width: 119px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    margin: 10px auto 0;
+    cursor:pointer;
+    color: #5296e2;
+    text-decoration: none;
+    background: url('../images/img/bookSprites1.png') no-repeat left -422px;
+}
+a:hover{
+    text-decoration: underline;
+}
+.bottom-shadow{
+    position: absolute;
+    height: 15px;
+    width: 826px;
+    bottom: -15px;
+    left: 180px;
+    background: url('../images/img/bookSprites2.png') left -256px;
+}
+.book-con2{
+    padding: 70px 0 20px 0;
+}
+.book-con2 .img2{
+    margin: 0 90px;
+}
+.book-con3 .b-p1{
+    font-size: 20px;
+    text-align: left;
+}
+.book-con3 h2{
+    margin: 20px 0;
+    height: 26px;
+    width: 100px;
+    background: url('../images/img/i7.jpg') center center no-repeat;
+}
+.book-con3 p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #222;
+    text-align: left;
+}
+.book-con4{
+    padding: 80px 0;
+}
+.book-con5 ul{
+    padding: 0 20px;
+    overflow: hidden;
+}
+.book-con5 ul li{
+    float: left;
+    width: 400px;
+    height: 80px;
+    margin-left: 80px;
+    line-height: 80px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #8c8c8c;
+}
+.book-con5 ul li i{
+    margin-right: 5px;
+    color: #ff3030;
+    font-size: 12px;
+}
+.book-con5 ul li input{
+    margin-left: 10px;
+    padding: 0 10px;
+    width: 230px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.book-con5 ul li input:focus{
+    border: 1px solid #428fe1;
+}
+.book-check-btn{
+    display: block;
+    margin: 10px auto 0;
+    width: 119px;
+    height: 45px;
+    border: none;
+    line-height: 45px;
+    cursor:pointer;
+    color: #5296e2;
+    text-align: center;
+    text-decoration: none;
+    background: url('../images/img/bookSprites1.png') left -422px no-repeat;
+}
+.book-float-nav{
+    position: fixed;
+    right: 0;
+    top: 200px;
+    display: none;
+    width: 137px;
+}
+.book-float-nav .float-nav1{
+    background: url('../images/img/bookSprites1.png') left -524px;
+}
+.book-float-nav a{
+    margin-bottom: 10px;
+    width: 137px;
+    height: 60px;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    color: #5b5b5b;
+}
+.book-float-nav .float-nav1-back{
+    background: url('../images/img/bookSprites1.png') left -596px;
+}
+.x{
+    display: block;
+}

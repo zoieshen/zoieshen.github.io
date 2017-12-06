@@ -1,0 +1,226 @@
+
+.about-content{
+    width:100%;
+}
+.about-content .about-inner-box{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top:18px;
+}
+.about-content .about-silde-left{
+    width: 200px;
+    float: left;
+}
+.about-content .about-title{
+    height: 201px;
+    border-bottom:1px solid #be0101;
+    background:none repeat scroll 0 0 #ff3838;
+    padding:10px;
+}
+.about-title h1{
+    color:#fff;
+    font-size: 2.4em;
+    float:right;
+    font-weight: normal;
+}
+.about-title span{
+    color:#ff8585;
+    font-size: 1.4em;
+    float: right;
+
+}
+.cate-menu{
+    height: 250px;
+}
+.cate-menu ul li{
+    border-top:1px solid #f01616;
+    height: 50px;
+    padding:13px 16px; 
+    background-color:#e20909;
+    border-bottom:1px solid #c20201;
+}
+.cate-menu ul li.active-red{
+    background:url('../images/imagesj/dot.png') no-repeat 180px 19px #ff3a3a;
+    font-size: 15px;
+    font-weight: bold;
+    color:#fff;
+}
+.cate-menu ul li a{
+    color:#fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.cate-menu ul li a:hover{
+    text-decoration: underline;
+
+}
+.cate-menu ul li:hover{
+    border-top:1px solid #f01616;
+    background:url('../images/imagesj/dot.png') no-repeat 180px 19px #ff3a3a;
+}
+.cate-menu ul li.active-red a:hover{
+  text-decoration: none; 
+}
+.about-content-right{
+  float: right;
+  width:980px;
+}
+.item-S{
+  margin-left: 8px;
+}
+.item-S{
+  color:#444;
+}
+.item-S span:last-child{
+  font-weight: bold;
+}
+.about-seg{
+  width:100%;
+  height: 5px;
+  background-color:#ccc;
+  margin: 10px 0;
+  border:none;
+
+}
+.about-content-item{
+  padding:8px 48px;
+  margin-bottom:32px; 
+}
+.about-content-item .about-main{
+  font-weight: normal;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color:#000;
+}
+.about-content-item p{
+  line-height: 30px;
+  font-size: 18px;
+  padding:0 36px 0 4px;
+  color:#444;
+}
+.about-content-item .title2{
+  margin-bottom: 50px;
+  color:#444;
+  
+}
+.about-content-item .about-con{
+  font-size: 12px;
+  line-height: 30px;
+  text-indent: 25px;
+}
+.about-content-item .about-con2{
+  margin-top: 30px;
+}
+.about-content-item .hover-list{
+  margin-top: 40px;
+  margin-bottom: 60px;
+  background:url(../images/imagesj/about_intro.png) no-repeat 470px 90px;
+}
+.about-content-item .hover-list p{
+  font-size: 14px;
+}
+.about-content-item .hover-list h3{
+  font-size: 24px;
+  color: #e10808;
+}
+.about-content-item .hover-list .indusrty-crown{
+  margin-top: 30px;
+}
+.about-va{
+  display: none;
+}
+.about-block{
+  display: block;
+}
+.about-slide .about-vb .item-title1{
+  padding:0 4px;
+}
+.about-slide .about-vb .item-title1 a{
+   color:#0096fd;
+   font-weight: normal;
+}
+.about-slide .about-vb .item-title1 a:hover{
+   text-decoration: underline;
+
+}
+    .about-slide .about-vb .item-seg,
+    .about-content-itema .item-seg{
+  margin: 12px 0;
+  border:none;
+  border-top:1px solid #ccc;
+}
+.about-slide .about-vb p{
+  padding:0 36px 0 4px;
+  line-height: 2em;
+  color:#444;
+  font-size: 12px;
+}
+.about-slide .about-vb p a{
+  color:#444;
+}
+.about-slide .about-vb p a:hover{
+  color:#206eef;
+  text-decoration: underline;
+}
+.about-slide .about-vb{
+  margin-bottom:32px;
+  padding:8px 0;
+}
+.about-slide .page{
+  height:20px;
+  line-height: 20px;
+  padding:19px 0 21px;
+  text-align: center;
+  vertical-align:middle;
+}
+.about-slide .page span{
+  display: inline-block;
+  list-style: none; 
+}
+.about-slide .page span a{
+  color:#232323;
+  display: inline-block;
+  line-height: 18px;
+  padding:0 3px;
+  text-align: center;
+  transition:all .2s;
+}
+.about-slide .page span a:hover{
+  background-color:#FF6600;
+  color:#fff;
+}
+.about-slide .page span .cur-f{
+   background-color:#FF6600;
+   color:#fff;
+}
+.option-about .about-content-itema{
+  padding:8px 48px;
+  padding-bottom:32px;
+  color:#444;
+}
+.option-about .about-content-itema h3{
+  font-weight: normal;
+   padding:0 4px;
+}
+.option-about .about-content-itema li{
+  line-height: 2em;
+}
+.option-about .about-content-itema .list-u a{
+  color:#232323;
+  line-height: 2em;
+  transition:all .2s;
+}
+.about-content-itema .list-u a:hover{
+  text-decoration: underline;
+  color:#206eef;
+
+}
+.about-content-itema .list-v{
+  text-align: left;
+}
+.about-content-itema .list-v .op{
+  padding:0 36px 0 4px;
+  line-height: 2em;
+}
+
+

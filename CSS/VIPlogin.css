@@ -1,0 +1,176 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0;} 
+body, button, input, select, textarea { font:14px "微软雅黑",tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight:normal;} 
+address, cite, dfn, em,i,var { font-style:normal; } 
+code, kbd, pre, samp { font-family:"微软雅黑",couriernew, courier, monospace; } 
+small{ font-size:12px; } 
+ul, ol{ list-style:none; } 
+a { text-decoration:none; } 
+a:hover { text-decoration:none; } 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; }
+legend { color:#000; } 
+fieldset, img,button,input{ border:0; outline: medium; } 
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+/* ############font#### */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* ###########清除浮动################ */
+.clearfix::after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.clearfix{
+	*zoom:1;
+}
+.w{
+	margin:0 auto;
+	width: 640px;
+}
+.body{
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+}
+/* header */
+.m_okhqb_header{
+  /* width: 600px; */
+  height: 30px;
+  padding: 5px 20px;
+  background: #e10808;
+}
+.m_okhqb_header .go-back{
+  float: left;
+  display: inline-block;
+  *display: inline;
+  *zoom:1;
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+  border-color: #fff;
+  border-style:solid;
+  border-width: 3px 0 0 3px;
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  /* 三角形也可以通过旋转来获得 */
+}
+.m_okhqb_header span{
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #fff;
+}
+.container .main{
+  margin-bottom: 30px;
+}
+.main .hqb-logo{
+  width: 196px;
+  height: 50px;
+  margin: 15px auto 0;
+  background: url(../images/hqb_logo.jpg) no-repeat;
+  background-size: 196px 50px;
+}
+.main .login-box{
+  padding: 15px 10% 50px;
+  width: 80%;
+}
+.main .login-box .login-area .ajax-tip{
+  margin:0 20px;
+}
+.main .login-box .login-area .ajax-tip span{
+  display: block;
+  padding: 3px 0 2px;
+  color: #FF6600;
+  font-size: 1.22em;
+}
+.main .login-box .login-area .item{
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  border:1px solid #e8e8e8;
+  border-radius: 3px;
+  font-size: 1.22em;
+  color: #c7c7c7;
+  box-shadow:2px 2px 2px #f5f5f5 inset;
+  text-indent: 20px;
+  background-color: #fff;
+}
+.main .login-box .login-area .login-area-btn{
+  display: block;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color:#fff;
+  border:1px solid #2b81eb;
+  background: #3a90fb;
+  font-weight: bold;
+  margin-top: 20px;
+  outline: none;
+  font-size: 18px;
+}
+.main .login-box .login-area p{
+  margin-top: 20px;
+  height: 18px;
+  line-height: 18px;
+  color: #3576f8;
+  font-size: 14px;
+  text-align: right;
+}
+.main .login-box .login-area p a{
+  color: #3576f8;
+  display: inline-block;
+  *display: inline;
+  *zoom:1;
+  padding-left: 2px;
+  text-align: center;
+  text-decoration: underline;
+}
+.main .login-box .login-area p a:first-child{
+  color: #005DA5;
+  padding-right: 2px;
+  padding-left: 0;
+  text-decoration: none;
+}
+.main .login-box .login-area p a:hover{
+  text-decoration: underline;
+  color: #3576f8;
+}
+.bottom .copyright-wrap{
+  padding: 20px 0 60px;
+}
+.bottom .copyright-wrap p{
+  width: 100%;
+  height: 19px;
+  line-height: 19px;
+  margin:3px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #a4a4a4;
+}
+.bottom .copyright-wrap p a{
+  color: #444;
+  padding: 0 20px;
+}
+.bottom .copyright-wrap p .current{
+  color: #0a86e6;
+}

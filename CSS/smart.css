@@ -1,0 +1,33 @@
+
+.stopic{
+    width:1200px;
+    margin: 0 auto;
+}
+.stopic-c{
+    padding-top:15px;
+}
+.stopic-c ul{
+    width:1200px;
+}
+.stopic-c ul li{
+    float: left;
+}
+.stopic-c ul li a img{
+   vertical-align: middle;
+}
+.footer-ad{
+    padding-top: 8px;
+}
+.footer-ad .f-title{
+    width:1200px;
+    height: 60px;
+    background:url(../images/footer_01.jpg) no-repeat left top;
+}
+.w-wrap .ad-wb-i{
+    padding:0 0 24px 30px;
+    float: left;
+}
+.index-bottom1{
+    width:1200px;
+    margin: 0 auto;
+}

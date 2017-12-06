@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="css/publiccar.css">
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="h-con w">
+            <div class="h-con-top">
+                <div class="h-top-list">
+                    <div class="item app-down">
+                        <i></i>
+                        <a class="J-app-down" href="javascript:void(0);" target="_blank">手机版
+                            <div class="app-down-expanded"><img width="98" height="98" src="./images/img-c/app_down.jpg" alt="app download">随时逛 及时购</div>                                    
+                        </a>
+                    </div>
+                    <div class="item pro-tool">
+                        华强北商城欢迎您：
+                        <a href="javascript:void(0);" class="tool-bold-red">登录</a>
+                        <a href="javascript:void(0);" class="tool-bold-red">快速注册</a>
+                    </div>
+                    <div class="item kf_phone"><span>客服电话：0755-88698888</span>服务时间<i></i>
+                        <div class="kf_time">工作日：9:00-22:00<br>节假日：9:00-18:00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-con-btm">
+                <h1><a href="http://www.okhqb.com" target="_blank">华强北商城</a></h1>
+                <div class="btm-freight"></div>
+                <div class="btm-ad"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="m-box w">
+            <div class="m-top-nav">
+                <span class="m-top-nav01">加入购物车</span>
+                <span class="m-top-nav02 m-top-on">确认订单信息</span>
+                <span class="m-top-nav03">成功提交订单</span>
+            </div>
+        </div>
+        <div class="m-form w">
+            <form action="">
+                <div class="f-time">
+                    <i class="f-time-icon"></i>
+                    <span class="f-time-text"></span>
+                </div>
+                <div class="f-address">
+                    <h3>1.地址选择
+                        <a href="javascript:void(0);" class="add-address"><i></i>添加地址</a>
+                    </h3>
+                    <div class="address-content">
+                        <ul class="address-list">
+                            <li>
+                                <p class="address-p1"><i class="u-name">发给</i> <i class="u-phone">15038056177</i></p>
+                                <p class="address-p2"><span class="province">北京</span><span class="city">北京市</span><span class="town">宣武区</span>
+                                    <span class="street">某某大楼1305室</span>
+                                </p>
+                                <p class="address-p3"><a href="javascript:void(0)" class="address-mody">修改</a><a href="javascript:void(0)" class="address-del">删除</a></p>
+                            </li>
+                            <li>
+                                <p class="address-p1"><i class="u-name">发给</i> <i class="u-phone">15038056177</i></p>
+                                <p class="address-p2"><span class="province">北京</span><span class="city">北京市</span><span class="town">宣武区</span>
+                                    <span class="street">某某大楼1305室</span>
+                                </p>
+                                <p class="address-p3"><a href="javascript:void(0)" class="address-mody">修改</a><a href="javascript:void(0)" class="address-del">删除</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="con-h3">2.支付方式</h3>
+                    <div class="pay-type-content">
+                        <div class="pay-type-sec1 pay-box">
+                            <span>您常用的支付方式:</span>
+                            <div class="pay-lable sec1-con">
+                                <label for="alipay_type">
+                                    <span class="bankimg">
+                                        <i class="radio"><input type="radio" class="type_qr" value="directPay" name="payBank" checked="" id="alipay_type"></i>                                
+                                        <img src="http://s.hqbcdn.com/assets/v1/images/bank/alipay_1.gif" disabled="disabled">
+                                    </span>
+                                </label>
+                                <label for="_cmb_b2c_2">
+                                    <span class="bankimg zhaohang-pay">
+                                        <i class="radio"><input type="radio" class="type_7" value="directPay" name="payBank" id="_cmb_b2c_2"></i>
+                                        <img src="http://s.hqbcdn.com/assets/v1/images/bank/CMB_OUT.gif" disabled="disabled">
+                                    </span>
+                                </label>
+                                <label for="wx_pay">
+                                    <span class="bankimg wx-pay">
+                                        <i class="radio"><input type="radio" class="type_11" value="qrWX" name="payBank" id="wx_pay"></i>
+                                        <img src="http://s2.hqbcdn.com/assets/v4/images/process/wxpay.jpg" disabled="disabled">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pay-pt pay-box">
+                            <div class="pay-pt-nav pay-nav">
+                                <label><input type="radio" name="pay-label">支付平台<span>支付宝/财付通</span></label>
+                            </div>
+                            <div class="pay-lable pay-nav-con">
+                                <label for="alipay">
+                                    <span class="bankimg">
+                                        <i class="radio"><input type="radio" id="alipay" name="payBank" value="directPay"></i>
+                                        <img disabled="disabled" src="http://s.hqbcdn.com/assets/v1/images/bank/alipay_1.gif">
+                                    </span>
+                                </label>
+                                <label for="alipay_qrPayMode">
+                                    <span class="bankimg">
+                                        <i class="radio"><input type="radio" id="alipay_qrPayMode" name="payBank" value="qrPayMode" class="type_qr"></i>
+                                        <img disabled="disabled" src="http://s.hqbcdn.com/assets/v1/images/bank/alipay_qr.gif">
+                                    </span>
+                                </label>
+                                <label for="tenpay">
+                                    <span class="bankimg">
+                                        <i class="radio"><input type="radio" id="tenpay" name="payBank" value="directPay" class="type_qr"></i>
+                                        <img disabled="disabled" src="http://s.hqbcdn.com/assets/v1/images/bank/Tenpay_gif.jpg">
+                                    </span>
+                                </label>
+                                <!-- S新增加微信 -->
+                                <label for="wxpay">
+                                    <span class="bankimg">
+                                        <i class="radio"><input type="radio" id="wxpay" name="payBank" value="qrWX" class="type_qr"></i>
+                                        <img disabled="disabled" src="http://s2.hqbcdn.com/assets/v4/images/process/wxpay.jpg">
+                                    </span>
+                                </label>
+                                <!-- E新增加微信 -->
+                            </div>
+                        </div>
+                        <div class="pay-online pay-box">
+                            <div class="pay-online-nav pay-nav">
+                                <label><input type="radio" name="pay-label">网上银行<span>各大银行均有支持</span></label>
+                            </div>
+                            <div class="pay-lable pay-nav-con">
+                                <ul class="pay-online-list">
+                                    <li><label for="_cmb_b2c"><span class="bankimg"><i class="radio"><input type="radio" class="type_7" value="directPay" name="payBank" id="_cmb_b2c"></i><img src="http://s.hqbcdn.com/assets/v1/images/bank/CMB_OUT.gif" disabled="disabled"></span></label></li>
+                                    <li><label for="ICBCB2C"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="ICBCB2C" id="ICBCB2C" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/ICBC_OUT.gif"></span></label></li>
+                                    <li><label for="CCB"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="CCB" id="CCB" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/CCB_OUT.gif"></span></label></li>
+                                    <li><label for="BOCB2C"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="BOCB2C" id="BOCB2C" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/BOC_OUT.gif"></span></label></li>
+                                    <li><label for="ABC"><span class="bankimg"> <i class="radio"> <input type="radio" class="_alipay_radio" value="ABC" id="ABC" name="payBank"></i><img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/ABC_OUT.gif"></span></label></li>
+                                    <li><label for="COMM"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="COMM" id="COMM" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/COMM_OUT.gif"></span></label></li>
+                                    <li><label for="SPDB"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="SPDB" id="SPDB" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/SPDB_OUT.gif"></span></label></li>
+                                    <li><label for="GDB"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="GDB" id="GDB" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/GDB_OUT.gif"></span></label></li>
+                                    <li><label for="CITIC"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="CITIC" id="CITIC" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/CITIC_OUT.gif"></span></label></li>
+                                    <li><label for="CIB"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="CIB" id="CIB" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/CIB_OUT.gif"></span></label></li>
+                                    <li><label for="CMBC"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="CMBC" id="CMBC" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/CMBC_OUT.gif"></span></label></li>
+                                    <li><label for="HZCBB2C"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="HZCBB2C" id="HZCBB2C" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/HZCB_OUT.gif"></span></label></li>
+                                    <li><label for="SHBANK"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="SHBANK" id="SHBANK" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/SHBANK_OUT.gif"></span></label></li>
+                                    <li><label for="SPABANK"><span class="bankimg"><i class="radio"> <input type="radio" class="_alipay_radio" value="SPABANK" id="SPABANK" name="payBank"></i> <img disabled="disabled" border="0" src="http://s.hqbcdn.com/assets/v1/images/bank/SPABANK_OUT.gif"></span></label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-lists">
+                    <h3>3.商品清单<a href="./cart.html">返回购物车修改&gt;&gt;</a></h3>
+                    <div class="order-lists-wrapper">
+                        <div class="order-lists-sp">
+                            <div class="sec-t1">商品</div>
+                            <div class="sec-t2">单价</div>
+                            <div class="sec-t3">数量</div>
+                            <div class="sec-t4">小计</div>
+                        </div>
+                        <div class="order-lists-sp sp-con">
+                            <div class="sec-t1">
+                                <div class="t-con">
+                                    <p class="sec-items-t1"><a href="http://www.okhqb.com/item/1000125287.html" target="_blank">AMC 晶盾内缩版 半屏高清钢化玻璃膜</a></p>
+                                    <p class="sec-items-t2">5.5寸</p>
+                                    <img width="100" height="100" src="http://img12.hqbcdn.com/product/cc/da/ccdabc74754dad83994f768b757c6ec8.100.png" class="sec-items-pic">
+                                </div>
+                            </div>
+                            <div class="sec-t2">¥25.00</div>
+                            <div class="sec-t3">x1</div>
+                            <div class="sec-t4 t-four">¥<span>45.20</span></div>
+                        </div>
+                        <div class="order-lists-sp sp-con">
+                            <div class="sec-t1">
+                                <div class="t-con">
+                                    <p class="sec-items-t1"><a href="http://www.okhqb.com/item/1000125287.html" target="_blank">AMC 晶盾内缩版 半屏高清钢化玻璃膜</a></p>
+                                    <p class="sec-items-t2">5.5寸</p>
+                                    <img width="100" height="100" src="http://img12.hqbcdn.com/product/cc/da/ccdabc74754dad83994f768b757c6ec8.100.png" class="sec-items-pic">
+                                </div>
+                            </div>
+                            <div class="sec-t2">¥25.00</div>
+                            <div class="sec-t3">x1</div>
+                            <div class="sec-t4 t-four">¥<span>25.00</span></div>
+                        </div>
+                        <div class="order-lists-sp sp-con">
+                            <div class="sec-t1">
+                                <div class="t-con">
+                                    <p class="sec-items-t1"><a href="http://www.okhqb.com/item/1000125287.html" target="_blank">AMC 晶盾内缩版 半屏高清钢化玻璃膜</a></p>
+                                    <p class="sec-items-t2">5.5寸</p>
+                                    <img width="100" height="100" src="http://img12.hqbcdn.com/product/cc/da/ccdabc74754dad83994f768b757c6ec8.100.png" class="sec-items-pic">
+                                </div>
+                            </div>
+                            <div class="sec-t2">¥25.00</div>
+                            <div class="sec-t3">x1</div>
+                            <div class="sec-t4 t-four">¥<span>45.20</span></div>
+                        </div>
+                        <div class="order-total">
+                            <div class="order-total-nav">
+                                <span class="show-yhq" data-type="1"><i class="show-icon">-</i>
+                                      使用优惠券/小强卡</span>
+                                <div class="order-total-right">
+                                    商品总金额:<span>¥<i class="order-totals">173.90</i></span>
+                                </div>
+                            </div>
+                            <div class="order-total-con" style="display: block;">
+                                <input type="hidden" name="couponId" class="couponId" value="">
+                                <div class="coup-wrapper">
+                                    <div class="coup-select">
+                                        <div class="couponIds"> 请选择或输入您的优惠券 </div>
+                                        <span class="coup-select-btn">▾</span>
+                                        <div class="coup-list">
+                                            <ul class="coup-list-ul">
+                                                <li data-value="" amount="" limit="">输入优惠券</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="coup-btns">
+                                        <input type="text" class="coup-text">
+                                        <span class="coup-btn">确定</span>
+                                        <i class="re_tips"></i>
+                                    </div>
+                                </div>
+                                <p class="order-total-p2">小强卡余额<i class="xqk-ye">0</i>元</p>
+                                <p class="order-total-p2">
+                                    使用小强卡支付<i class="use-card">0</i> 元</p>
+                            </div>
+                        </div>
+                        <div class="order-info">
+                            <div class="order-info-left">
+                                <h4>收货信息</h4>
+                                <div class="order-info-addres">
+                                    <p>发给&nbsp;&nbsp;&nbsp;&nbsp;15038056177</p>
+                                    <p><span class="province">北京</span><span class="city">北京市</span><span class="town">宣武区</span>
+                                        <span class="street">某某大楼1305室</span><a href="#order-wrapper" class="address-mody-att">修改</a></p>
+                                </div>
+                                <p class="order-messge">订单留言</p>
+                                <p><textarea name="message" class="message" maxlength="100"></textarea></p>
+                                <div class="order-info-bottom">
+                                    <div class="order-time">
+                                        <i class="order-time-icon"></i><span class="order-time-text"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-info-right">
+                                <div class="order-price">
+                                    <p class="pay-yh-space">&nbsp;</p>
+                                    <p class="pay-xqk-space">&nbsp;</p>
+                                    <p class="order-sun-p">商品总价：<span>¥<i class="pay-fina">173.90</i></span></p>
+                                    <p class="pay-yf-p">运费：<span>¥<i class="pay-yf"> 0.00 </i></span></p>
+                                    <p>总金额：<span>¥<i class="pay-total">173.90</i></span></p>
+                                </div>
+                                <div class="order-btns">
+                                    <p class="order-btns-fenqi"><i>您还需支付：</i><span>¥<i>173.90</i></span></p>
+                                    <input type="submit" value="提交订单" id="order-submit" name="submit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="simple-footer-wrap w">
+            <div class="copyright">
+                <span>Copyright © 2010-2015 深圳市华强北在线商务有限公司 版权所有 </span><a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP备12050212号-1</a>
+                <a href="http://www.sznet110.gov.cn" target="_blank">
+                    <img alt="深圳网警" title="深圳网警" src="./images/img-c/foot_icon1_gb.jpg"></a>
+                <a href="http://www.miitbeian.gov.cn" target="_blank">
+                    <img alt="经营许可证" title="增值电信业务经营许可证" src="./images/img-c/foot_icon2_gb.jpg"></a>
+                <a href="http://www.ebs.gov.cn/EntCertificate.aspx?mainId=bc682492-860c-4d99-9130-b66ab75bcbf2" target="_blank"><img alt="市场监制主体身份认证" title="市场监制主体身份认证" src="http://s.hqbcdn.com//assets/v3/images/newindex/foot_icon3_gb.jpg"></a>
+                <a target="_blank" rel="nofollow" href="http://www.szscjg.gov.cn/">
+                    <img src="./images/img-c/foot_icon4_gb.jpg" title="电子商务消费者服务站" alt="电子商务消费者服务站"></a>
+                <a class="f_link" href="http://www.okhqb.com/link" target="_blank">友情链接</a>
+                <a href="http://www.okhqb.com/sitemap.html" target="_blank" class="s_map">网站地图</a>关注我们：<a href="http://e.weibo.com/hqb360"
+                    target="_blank">
+                    <img src="./images/img-c/t_sina_gb.jpg" title="新浪微博" alt="新浪微博"></a>
+                <a href="http://e.t.qq.com/okhqbokhqb" target="_blank">
+                    <img src="./images/img-c/t_qq_gb.jpg" title="腾讯微博" alt="腾讯微博"></a>
+            </div>
+        </div>
+    </div>
+    <div class="address-select">
+        <div class="address-mask">
+            <div class="address-wrapper">
+                <div class="address-new-nav">使用新地址<span class="address-new-close">╳</span></div>
+                <div class="address-lists">
+                    <div class="add-item add-name">
+                        <div class="item-text">
+                            <i>*</i>
+                            <span>收货人:</span>
+                        </div>
+                        <div class="item-input">
+                            <input type="text">
+                        </div>
+                        <span class="error">请填写正确的收货人姓名！</span>
+                    </div>
+                    <div class="add-item add-num">
+                        <div class="item-text">
+                            <i>*</i>
+                            <span>手机号码:</span>
+                        </div>
+                        <div class="item-input">
+                            <input type="text">
+                        </div>
+                        <span class="error">请填写正确的收货人的联系方式！</span>
+                    </div>
+                    <div class="add-item add-mail">
+                        <div class="item-text">
+                            <i>*</i>
+                            <span>收货地址:</span>
+                        </div>
+                        <div class="address-new-lists">
+                            <div class="prov-box address-box">
+                                <span data-value="1">北京</span>
+                                <span data-value="21">上海</span>
+                                <span data-value="42">天津</span>
+                                <span data-value="62">重庆</span>
+                                <span data-value="104">安徽</span>
+                                <span data-value="227">福建</span>
+                                <span data-value="322">甘肃</span>
+                                <span data-value="423">广东</span>
+                                <span data-value="566">广西</span>
+                                <span data-value="690">贵州</span>
+                                <span data-value="788">海南</span>
+                                <span data-value="814">河北</span>
+                                <span data-value="998">河南</span>
+                                <span data-value="1176">黑龙江</span>
+                                <span data-value="1320">湖北</span>
+                                <span data-value="1436">湖南</span>
+                                <span data-value="1573">吉林</span>
+                                <span data-value="1643">江苏</span>
+                                <span data-value="1763">江西</span>
+                                <span data-value="1874">辽宁</span>
+                                <span data-value="1989">内蒙古</span>
+                                <span data-value="2103">宁夏</span>
+                                <span data-value="2130">青海</span>
+                                <span data-value="2182">山东</span>
+                                <span data-value="2340">山西</span>
+                                <span data-value="2471">陕西</span>
+                                <span data-value="2589">四川</span>
+                                <span data-value="2792">西藏</span>
+                                <span data-value="2873">新疆</span>
+                                <span data-value="2987">云南</span>
+                                <span data-value="3133">浙江</span>
+                            </div>
+                            <div class="city-box address-box">
+                                <span data-value="22">上海市</span>
+                            </div>
+                            <div class="town-box address-box">
+                                <span data-value="23">黄浦区</span>
+                                <span data-value="24">卢湾区</span>
+                                <span data-value="25">徐汇区</span>
+                                <span data-value="26">长宁区</span>
+                                <span data-value="27">静安区</span>
+                                <span data-value="28">普陀区</span>
+                                <span data-value="29">闸北区</span>
+                                <span data-value="30">虹口区</span>
+                                <span data-value="31">杨浦区</span>
+                                <span data-value="32">闵行区</span>
+                                <span data-value="33">宝山区</span>
+                                <span data-value="34">嘉定区</span>
+                                <span data-value="35">浦东新区</span>
+                                <span data-value="36">金山区</span>
+                                <span data-value="37">松江区</span>
+                                <span data-value="38">青浦区</span>
+                                <span data-value="39">南汇区</span>
+                                <span data-value="40">奉贤区</span>
+                                <span data-value="41">崇明县</span>
+                                <span data-value="10131">川沙区</span>
+                                <span data-value="10132">其它区</span>
+                            </div>
+                        </div>
+                        <div class="item-input">
+                            <div class="input-text">省/直辖市</div>
+                            <div class="add-btn">▾</div>
+                        </div>
+                        <div class="item-input item-city">
+                            <div class="input-text">市</div>
+                            <div class="add-btn">▾</div>
+                        </div>
+                        <div class="item-input item-town">
+                            <div class="input-text">区/县</div>
+                            <div class="add-btn">▾</div>
+                        </div>
+                    </div>
+                    <div class="add-item add-dtl">
+                        <div class="item-text">
+                            <i>*</i>
+                            <span>详细地址:</span>
+                        </div>
+                        <div class="item-input">
+                            <input type="text">
+                        </div>
+                        <span class="error">请填写收货地址！</span>
+                    </div>
+                    <div class="add-item add-ok">
+                        <span class="item-ok">确认</span>
+                        <span class="item-no">取消</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/order.js"></script>
+</body>
+
+</html>

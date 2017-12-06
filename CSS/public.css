@@ -1,0 +1,824 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; color:#444;} 
+body, button, input, select, textarea { font:14px, arial, \5b8b\4f53; } 
+h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+address, cite, dfn, em, var , i{ font-style:normal; } 
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
+small{ font-size:12px; } 
+ul, ol { list-style:none; } 
+a { text-decoration:none; } 
+a:hover { text-decoration:none; } 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; } 
+legend { color:#000; } 
+fieldset, img { border:0; } 
+button, input, select, textarea { font-size:100%; outline: none;} 
+table { border-collapse:collapse; border-spacing:0; }
+.w{width: 1200px;margin:0 auto}
+.clearfix::after{
+	content: '.';
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+}
+.clearfix{
+	*zoom: 1;
+}
+body{
+    min-width: 1200px;
+    color: #686868;
+   
+}
+*{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.h-bg{
+    height: 35px;
+    font-size:12px;
+    line-height: 35px;
+    border-bottom:1px solid #f2f2f2;
+    background: #fbfbfb;  
+}
+.h-bg .bg-left{
+    float: left;
+}
+.h-bg .bg-left a{
+    color:#686868;
+}
+.h-bg .bg-left a:hover{ 
+    text-decoration:underline; 
+} 
+.h-bg .bg-left a:nth-child(1){
+    color:#e10808;
+}
+.h-bg .bg-right{
+    float:right;
+}
+.h-bg .bg-right a{
+	display: block;
+    color:#898989;
+}
+.h-bg .bg-right .bg-right-list>li{
+    width: 82px;
+    position: relative;
+    float: left;
+    z-index: 1;
+    height: 35px;
+}
+.h-bg .bg-right .bg-right-list li>a{
+	position: absolute;
+    display: block;
+    width: 100%;
+    z-index: 1;
+    padding: 0 10px;
+    border: 1px solid transparent; 
+}
+.h-bg .bg-right .bg-right-list>li>i{
+    width: 10px;
+    height: 10px;
+    position: absolute; 
+    bottom: 7px;
+    right:7px; 
+    z-index: 2;
+    background: url(../images/sprites_index_2.png);
+    background-position: -36px -117px;
+}
+.h-bg .bg-right .bg-right-list>li:hover>a{
+    border-color:#ccc;
+    border-bottom-color: #fff;
+    border-top-color: #fff;    
+    background: #fff;
+}
+.h-bg .bg-right .bg-right-list>li:hover>a{
+    color:#e10808;
+}
+.h-bg .bg-right .bg-right-list>li:hover>i{
+    background-position: -46px -117px;
+}
+.h-bg .bg-right .bg-right-list .bg-list-msg{
+    position: relative;
+}
+.h-bg .bg-right .bg-right-list .bg-list-msg span{
+    position: absolute;
+    text-align: center;
+    line-height: 14px;
+    font-size: 12px;
+    width: 14px;
+    height: 14px;
+    top: 0;
+    right:0;
+    color:#fff;
+    border-radius:50%;
+    background:#e10808;
+}
+.h-bg .bg-right .bg-right-list>li .bg-box{
+    position: absolute;
+    line-height: 12px;
+    min-width: 162px;
+    top: 35px;
+    left: 0;
+    display: none;
+    border:1px solid #ccc;
+}
+.h-bg .bg-right .bg-right-list li .bg-box.bg-msg{
+	width: 290px;
+    min-height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+.h-bg .bg-right .bg-right-list li .bg-box a{
+    padding:0 10px;
+    line-height: 25px;
+    float: left;
+}
+.h-bg .bg-right .bg-right-list li:hover .bg-box{
+    display: block;
+    background-color: #fff;
+}
+.h-bg .bg-right .bg-right-list li .bg-box a:hover{
+    color:#e10808;
+}
+.h-bg .bg-right .bg-right-list li .kffw{
+    width: 190px;
+    left:-108px;
+}
+.h-bg .bg-right .bg-right-list li .bg-box .kfrx{
+    border-bottom: 1px dashed #ccc;
+}
+.h-bg .bg-right .bg-right-list li:hover .bg-box .kfrx{
+    color:#686868;
+}
+.h-bg .bg-right .bg-right-list li .gywm{
+    width: 196px;
+    left:-114px;
+    padding: 10px 0 0;
+    text-align: center;
+}
+.h-bg .bg-right .bg-right-list li .gywm a{
+    display: block;
+    width: 84px;
+    height: 107px;
+    padding:0;
+    float: left;
+    margin-left: 10px;
+	line-height: 190px;
+	background-image: url(../images/duc/tuomi10.jpg);
+}
+.h-bg .bg-right .bg-right-list li .gywm a:nth-child(1){
+    /* background-image: url(../images/qrWb.jpg); */
+    background-position: 0 0;  
+}
+.h-bg .bg-right .bg-right-list li .gywm a:nth-child(2){
+    /* background-image: url(../images/qrWb.jpg); */
+    background-position: -90px 0;  
+}
+.h-bg .bg-right .bg-right-list li .gywm a:nth-child(3){
+    /* background-image: url(../images/qrWb.jpg); */
+    background-position: 0 -114px;  
+}
+.h-bg .bg-right .bg-right-list li .gywm a:nth-child(4){
+    /* background-image: url(../images/qrWb.jpg); */
+    background-position: -90px -114px;  
+}
+/* 搜索行 */
+.h-header{
+	height: 115px;
+	padding: 25px 0 10px;
+}
+.h-header>div{
+	float: left;
+}
+.h-header .hd-log{
+	width: 429px;
+	height: 100%;
+}
+.h-header .hd-log h1{
+	width: 248px;
+	height: 70px;
+	float: left;
+	text-indent: -9999px;
+}
+.h-header .hd-log h1 a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../images/duc/logo.png);
+}
+.h-header .hd-log>a{
+	display: block;
+	float: right;
+	width: 144px;
+	height: 100%;
+	background-image: url(../images/duc/2b4f38a73a55ce2044dcf87e506481ab.gif);
+}
+.h-header .hd-search{
+	width: 430px;
+	height: 57px;
+	margin: 10px 0 0 30px;
+}
+.h-header .hd-search .search-form{
+	width: 100%;
+	height: 34px;
+	border: 1px solid #e10808;
+}
+.h-header .hd-search .search-form input{
+	width: 90%;
+	height: 100%;
+	padding-left: 5px;
+	border: none;
+	float: left;
+	font-size: 12px;
+}
+.h-header .hd-search .search-form button{
+	width: 10%;
+	height: 100%;
+	background:#e10808;
+	border: none;
+	color: #fff;
+	float: right;
+}
+.h-header .hd-search .search-form button i{
+	font-size: 25px;
+}
+.h-header .hd-search .hot-search{
+	width: 100%;
+	height: 20px;
+	margin-top: 5px;
+	overflow: hidden;
+	line-height: 20px;
+}
+.h-header .hd-search .hot-search a{
+	font-size: 12px;
+	color: #B6B6B6;
+	margin-right: 20px;
+	text-decoration: initial;
+}
+.h-header .hd-search .hot-search a.hot-active{
+	color: #e10808;
+}
+.h-header .hd-search .hot-search a:hover{
+	text-decoration:underline;
+}
+.h-header .hd-car{
+	float: right;
+	width: 135px;
+	height: 33px;
+} 
+.h-header .hd-car a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+	position: relative;
+	/* z-index: -1; */
+	margin-top: 10px;
+	line-height: 33px;
+	border: 1px solid #eaeaea;
+	font-size: 12px;
+	color: #232323;
+}
+.h-header .hd-car a span{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+	top: 5px;
+	width: 22px;
+	height: 22px;
+	line-height: 33px;
+	background: url(../images/duc/tuomi2.png) -187px -61px no-repeat;;
+}
+.h-header .hd-car a i{
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 25px;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: #e10808;
+	color: #fff;
+	text-align: center;
+	line-height: 18px;
+}
+/* 导航 */
+.header .h-menu{
+	height: 38px;
+	margin-top: 10px;
+	background-color:#e10808;
+}
+.header .h-menu .menu-list{
+	height: 100%;
+}
+.header .h-menu .menu-list li{
+	float: left;
+	height: 100%;
+}
+.header .h-menu .menu-list li .menu-item{
+	display: block;
+	height: 100%;
+	padding: 0 50px;
+	text-align: center;
+	line-height: 38px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+}
+.header .h-menu .menu-list>li>a:hover{
+	background-color: rgba(0, 0, 0, .2);
+}
+.header .h-menu .menu-list li .menu-item .menu-tb{
+	display: inline-block;
+	margin: 0 10px 0 -60px;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	background:url(../images/duc/tuomi7.png) -386px -130px no-repeat;
+}
+.header .h-menu .menu-list>li:nth-child(3){
+	background: url(../images/duc/hw.gif);
+}
+.header .h-menu .menu-list>li:last-child{
+	float: right;
+	position: relative;
+	width: 210px;
+}
+.header .h-menu .menu-list>li:last-child>div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../images/duc/tuomi2.png) 0px 0px no-repeat;
+}
+.header .h-menu .menu-list>li:last-child>a{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,8,8,0.2);
+}
+.header .h-menu .menu-list>li:nth-child(3):hover>a,.header .h-menu .menu-list>li:last-child:hover>a{
+	background-color: transparent;
+}
+/* 二级导航 */
+.h-menu .menu-list .menu-nav{
+	position: relative;
+}
+.h-menu .menu-list .menu-nav .menu-item{
+	padding:0 70px !important;
+}
+.h-menu .menu-list .h-submenu{
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+	z-index: -1;
+	background-color: rgba(0, 0, 0, .8);
+	transition:all .5s;
+}
+.h-menu .menu-list .menu-nav:hover .h-submenu{
+	opacity: 1;
+	z-index: 0;
+}
+.h-menu .menu-list .h-submenu>li{
+	width: 100%;
+	height: 45px;
+}
+.h-menu .menu-list .h-submenu>li>a{
+	display: block;
+	height: 45px;
+	width: 174px;
+	padding: 0 10px 0 24px;
+	line-height: 45px;
+	font-size: 14px;
+}
+.h-menu .menu-list .h-submenu>li span{
+	color: #fff;
+}
+.h-menu .menu-list .h-submenu>li .sub-tb{
+	display: block;
+	float: left;
+	width: 18px;
+	height: 18px;
+	background: url(../images/duc/tuomi2.png) 0 -41px;
+	margin: 13px 18px 0 0;
+}
+
+.h-menu .menu-list .h-submenu>li>a .sub-jt{
+	display: block;
+	width: 10px;
+	height: 18px;
+	background: url('../images/newVesionSprites.png') -590px -54px;
+	float: right;
+	margin: 12px 0 0;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(2) .sub-tb{
+	background-position: -19px -41px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(3) .sub-tb{
+	background-position: -39px -41px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(4) .sub-tb{
+	background-position: -80px -41px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(5) .sub-tb{
+	background-position: -59px -41px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(6) .sub-tb{
+	background-position: -102px -41px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(7) .sub-tb{
+	background-position: -125px -41px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(8) .sub-tb{
+	background-position: -152px -41px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(2):hover .sub-tb{
+	background-position: -19px -62px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(3):hover .sub-tb{
+	background-position: -39px -62px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(4):hover .sub-tb{
+	background-position: -80px -62px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(5):hover .sub-tb{
+	background-position: -59px -62px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(6):hover .sub-tb{
+	background-position: -102px -62px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(7):hover .sub-tb{
+	background-position: -125px -62px;
+}
+.h-menu .menu-list .h-submenu>li:nth-child(8):hover .sub-tb{
+	background-position: -152px -62px;
+}
+.h-menu .menu-list .h-submenu .h-sub>a{
+	display: inline-block;
+	padding: 0;
+	margin-right: 9px;
+	line-height: 30px;
+}
+.h-menu .menu-list .h-submenu>li:hover>a>span{
+	color: #e10808;
+}
+.h-menu .menu-list .h-submenu>li:hover>a>.sub-tb{
+	background-position: 0 -61px;
+}
+.h-menu .menu-list .h-submenu>li:hover>a>.sub-jt{
+	background-position: -578px -54px;
+}
+.h-menu .menu-list .h-submenu>li .h-sub{
+	position: absolute;
+	top: 0;
+	left: 174px;
+	width: 286px;
+	height:100%;
+	padding: 0 30px;
+	background-color: rgba(0, 0, 0, .8);
+	/* display: none; */
+	opacity: -1;
+	transition: all .5s;
+}
+.h-menu .menu-list .h-submenu>li:hover .h-sub{
+	/* display: block; */
+	opacity: 1;
+}
+.h-menu .menu-list .h-submenu>li .h-sub>a{
+	color: #fff;
+	font-size: 12px;
+}
+.h-menu .menu-list .h-submenu>li .h-sub>a:hover{
+	color:#e10808 ;
+}
+/* 尾部 */
+.footer a{
+	display: block;
+	color: #535353;
+}
+.footer .f-top{
+	height: 230px;
+	background-color:#f4f3f3;
+	padding-top: 50px;
+}
+.footer .f-top .f-tp-lf{
+	float: left;
+	width: 116px;
+	margin: 0 50px 0 20px;
+}
+.footer .f-top p{
+	font-size: 12px;
+	color: #525252;
+	text-align: center;
+}
+.footer .f-top .f-lf-wx{
+	width: 100%;
+	height: 116px;
+	margin-bottom: 5px;
+	background: url(../images/duc/tuomi5.png) 0px -262px no-repeat;
+}
+.footer .f-top .f-tp-md{
+	float: left;
+}
+.footer .f-top .f-tp-md .f-list li{
+	float: left;
+	padding: 0 35px 0 32px;
+	border-right:1px solid #eaeaea ;
+}
+.footer .f-top .f-tp-md .f-list li:last-child{
+	border-right: none;
+}
+.footer .f-top .f-tp-md .f-list li h3,.footer .f-top .f-tp-rg h3{
+	line-height: 36px;
+	font-size: 18px;
+}
+.footer .f-top .f-tp-md .f-list li a{
+	line-height: 40px;
+	text-align: center;
+}
+.footer .f-top .f-tp-md .f-list li a:hover{
+	text-decoration: underline;
+}
+.footer .f-top .f-tp-md .f-list li p{
+	font-size: 16px;
+	line-height: 40px;
+}
+.footer .f-top .f-tp-md .f-list li button{
+	width: 96px;
+	height: 25px;
+	text-align: center;
+	line-height: 23px;
+	font-size: 14px;
+	border: 1px solid #d3d0d2;
+	border-radius: 5px;
+	background-color:#f2f2f2;
+	cursor: pointer;
+}
+.footer .f-top .f-tp-rg .f-tp-wxb{
+	height: 44px;
+}
+.footer .f-top .f-tp-rg .f-tp-wxb .tp-wx,.footer .f-top .f-tp-rg .f-tp-wxb .tp-wb{
+	float: left;
+	width: 45px;
+	height: 100%; 
+	margin-top: 10px;
+	position: relative;
+	transition: opacity 5s;
+}
+.footer .f-top .f-tp-rg .f-tp-wxb .tp-wx{
+	margin-right: 20px;
+	background: url(../images/duc/tuomi4.png)-8px 0px no-repeat ;
+}
+.footer .f-top .f-tp-rg .f-tp-wxb .tp-wb{
+	margin-right: 20px;
+	background: url(../images/duc/tuomi4.png) -8px -44px no-repeat ;
+}
+.footer .f-top .f-tp-rg .f-tp-wxb .tp-wx:hover{
+	background-position: -53px 0;
+}
+.footer .f-top .f-tp-rg .f-tp-wxb .tp-wb:hover{
+	background-position: -53px -45px;
+}
+.footer .f-top .f-tp-rg{
+	float: right;
+}
+.footer .f-top .f-tp-rg .f-tp-wxb .tp-wx div,.footer .f-top .f-tp-rg .f-tp-wxb .tp-wb div{
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+	width: 122px;
+	height: 130px;
+	left: -40px;
+	background:url(../images/duc/tuomi5.png) 0px 1px no-repeat;
+	transition: opacity .5s;
+}
+.footer .f-top .f-tp-rg .f-tp-wxb .tp-wx div{
+	background-position: 0px 0px;
+}
+.footer .f-top .f-tp-rg .f-tp-wxb .tp-wb div{
+	background-position: 0 -130px;
+}
+.footer .f-top .f-tp-rg .f-tp-wxb .tp-wx:hover div,.footer .f-top .f-tp-rg .f-tp-wxb .tp-wb:hover div{
+	opacity: 1;
+	z-index: 0;
+	top: 45px;
+}
+.footer .f-btm{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+.footer .f-btm .f-top-list{
+	margin: 0 auto;
+	line-height: 20px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	*margin-top: 10px;
+}
+.footer .f-btm .f-top-list li{
+	float: left;
+	padding: 0 20px;
+	border-right: 1px solid #ccc;
+}
+.footer .f-btm .f-top-list li:last-child{
+	border: none;
+}
+.footer .f-btm .f-top-list li a,.footer .f-btm p{
+	color: #666;
+}
+.footer .f-btm .f-top-list li a.red{
+	color: red;
+	font-weight: bold;
+}
+.footer .f-btm .f-top-list li a:hover{
+	text-decoration: underline;
+}
+.footer .f-btm p{
+	line-height: 40px;
+}
+.footer .f-btm p a{
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	*margin-top: 10px;
+	color: #00e;
+}
+.footer .f-btm p a:hover{
+	color:#206eef ;
+	text-decoration: underline;
+}
+.footer .f-btm .f-btm-list{
+	height: 50px;
+	margin: 20px 0;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	*margin-top: 10px;
+}
+.footer .f-btm .f-btm-list a{
+	width: 200px;
+	float: left;
+	height: 100%;
+	margin: 0 3px;
+	background:url(../images/duc/tuomi4.png);
+}
+.footer .f-btm .f-btm-list a:nth-child(1){
+	width: 143px;
+	background-position: 0px -91px;
+}
+.footer .f-btm .f-btm-list a:nth-child(2){
+	width: 143px;
+	background-position: 0px -139px;
+}
+.footer .f-btm .f-btm-list a:nth-child(3){
+	width: 151px;
+	background-position: 0px -189px;
+}
+.footer .f-btm .f-btm-list a:nth-child(4){
+	width: 194px;
+	background-position: 0px -237px;
+}
+.footer .f-btm .f-btm-list a:nth-child(5){
+	width: 124px;
+	background:url(../images/duc/sahnb3.png) 0px 0px no-repeat;
+}
+.footer .f-btm .f-btm-list a:nth-child(6){
+	width: 114px;
+	background:url(../images/duc/sahnb.png) 0px 3px no-repeat;
+}
+.footer .f-btm .f-btm-list a:nth-child(7){
+	width: 128px;
+	height: 52px;
+}
+.footer .f-btm .f-btm-list a:nth-child(7){
+	background:url(../images/duc/sahnb2.gif) 0px 0px no-repeat;
+}
+.service,.sv-error{
+    position: fixed;
+    z-index: 999;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    display: none;
+}
+.service .sv-con{
+    width: 310px;
+    height: 254px;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -127px;
+    margin-left: -155px;
+}
+.service .sv-con .sv-main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    color:#fff;
+    font-weight: bold;
+    font-family: "宋体";
+}
+.service .sv-con .sv-main h3,.sv-error h3{
+    height: 34px;
+    background: #1b91eb;
+    padding-left: 10px;
+    line-height: 34px;
+    font-size: 14px;
+    color:#fff;
+}
+.service .sv-con .sv-main i,.sv-error i{
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    right: 0;
+    top: 0;
+    color:#fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+}
+.service .sv-con .sv-main .sv-m-con{
+    padding:20px 25px;
+}
+.service .sv-con .sv-main .sv-m-con .sv-text{
+    display: block;
+    width: 100%;
+    height: 80px;
+    resize: none;
+    color:#ccc;        
+    margin-top: 15px;
+    border: 1px solid #D9D9D9;
+}
+.service .sv-con .sv-main .sv-m-con .sv-text:focus{
+    outline: rgba(27, 145, 235,.5) solid 1px;    
+}
+.service .sv-con .sv-main .sv-m-con input{
+    width: 100%;
+    height: 22px;
+    color:#ccc;        
+    border:1px solid #D9D9D9;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.sv-email::-webkit-input-placeholder{
+    color:#ccc;
+}    /* 使用webkit内核的浏览器 */
+.sv-email:-moz-placeholder{
+    color:#ccc;    
+}                  /* Firefox版本4-18 */
+.sv-email::-moz-placeholder{
+    color:#ccc;    
+}                  /* Firefox版本19+ */
+.sv-email:-ms-input-placeholder{
+    color:#ccc;    
+} 
+.sv-email:focus::-webkit-input-placeholder{
+    color:#666;
+}    /* 使用webkit内核的浏览器 */
+.sv-email:focus:-moz-placeholder{
+    color:#666;    
+}                  /* Firefox版本4-18 */
+.sv-email:focus::-moz-placeholder{
+    color:#666;    
+}                  /* Firefox版本19+ */
+.sv-email:focus:-ms-input-placeholder{
+    color:#666;    
+} 
+.service .sv-con .sv-main .sv-m-con button{
+    width: 60px;
+    height: 24px;
+    border: none;
+    float:right;
+    margin-top: 10px;
+    cursor:pointer;
+}
+.sv-error{
+    background: rgba(0,0,0,.6);
+}
+.sv-error .sv-error-main{
+    position: relative;
+    z-index: 9999;
+    top:50%;
+    left:50%;
+    width: 240px;
+    height: 106px;
+    margin-top: -74px;
+    margin-left: -120px;
+    background: #fff;
+}
+.sv-error .sv-error-main .sv-error-con{
+    height:72px;
+    font-size: 12px;
+    line-height: 72px;
+    padding-left:75px;
+    background: url(../images/duc/jingao.png) no-repeat 10px center;
+}

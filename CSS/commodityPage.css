@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/* 关注 */
+.fo-box { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 1000; position: fixed; top: 0; left: 0; display: none; bottom: 0; right: 0; }
+
+.fo-box .fo-con { width: 172px; height: 112px; background: #fff; position: relative; margin: 300px auto 0; }
+
+.fo-box .fo-con p { height: 34px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 10px; background: #1b91eb; color: #fff; font-size: 16px; line-height: 34px; }
+
+.fo-box .fo-con .fo-fn { height: 78px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; line-height: 78px; color: #666; font-size: 14px; text-align: center; }
+
+#error { font-size: 16px; font-weight: 800; color: #fff; width: 34px; height: 34px; position: absolute; top: 0px; text-align: center; right: 0px; cursor: pointer; }
+
+#error:hover { background: #1377c3; }
+
+/* 内容 */
+.body-con { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 38px; background: #f3f4f5; }
+
+.body-con .title { height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; line-height: 38px; color: #444444; }
+
+.body-con .title a { color: #444444; font-size: 12px; }
+
+.body-con .title a:hover { color: #e10808; text-decoration: underline; }
+
+.body-con .title i { font-size: 12px; }
+
+.body-content { background: #fff; padding: 10px 0 50px; }
+
+.body-content .con-top { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.top-img { float: left; display: block; margin: 0px 0px 0px 0px; padding: 10px 40px 0px 30px; }
+
+.top-img .view-img { border: 1px solid #e1e1e1; width: 340px; height: 340px; background: url("../images/commodityage/dg1.png"); }
+
+.top-img .list-box { margin: 15px 0px; padding: 0px 33px; height: 62px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; position: relative; }
+
+.top-img .list-box a { display: block; width: 22px; height: 60px; line-height: 60px; border: 1px solid #e1e1e1; position: absolute; cursor: not-allowed; top: 0; }
+
+.top-img .list-box a i { font-size: 22px; color: #e1e1e1; }
+
+.top-img .list-box .li-fl { left: 0; }
+
+.top-img .list-box .li-fr { right: 0; }
+
+.top-img .list-box .list-cot { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 62px; overflow: hidden; position: relative; }
+
+.list-img { width: 100%; position: absolute; }
+
+.list-img li { float: left; width: 60px; height: 60px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #e1e1e1; cursor: pointer; margin-right: 9px; -webkit-transition: border-color 0.5s; -o-transition: border-color 0.5s; -moz-transition: border-color 0.5s; transition: border-color 0.5s; }
+
+.list-img li:nth-child(4n) { margin-right: 0; }
+
+.list-img .list-dig1 { background: url("../images/commodityage/dig1.png"); }
+
+.list-img .list-dig2 { background: url("../images/commodityage/dig2.jpg"); }
+
+.list-img .list-dig3 { background: url("../images/commodityage/dig3.jpg"); }
+
+.list-img .list-dig4 { background: url("../images/commodityage/dig4.jpg"); }
+
+.list-img .list-dig5 { background: url("../images/commodityage/dig5.jpg"); }
+
+.follow-link { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; }
+
+.follow-link span { float: left; display: block; margin: 0px 0px 0px 0px; vertical-align: middle; height: 20px; width: 65px; padding-left: 20px; cursor: pointer; }
+
+.follow-link span i { width: 14px; float: left; display: block; margin: 0px 0px 0px 0px; height: 12px; background: url("../images/commodityage/sprites1.png") -156px -77px no-repeat; }
+
+.follow-link span a { float: left; display: block; margin: -3px 0px 0px 6px; font-size: 12px; color: #444444; }
+
+.follow-link span .ls-follow { background: url("../images/commodityage/sprites1.png") -174px -63px no-repeat; }
+
+.follow-link .ww { padding: 0px; margin-left: 5px; }
+
+.follow-link .ww:hover .wi-wb { display: block; }
+
+.wi-wb { position: relative; border: 1px solid #e10808; width: 102px; height: 58px; top: 24px; display: none; background: #fff; padding: 12px 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; left: 10px; }
+
+.wi-wb::before { content: ''; position: absolute; top: -6px; left: 14px; z-index: 1; -webkit-transform: rotate3d(1, 0, 1, 58deg); -moz-transform: rotate3d(1, 0, 1, 58deg); transform: rotate3d(1, 0, 1, 58deg); border: 1px solid transparent; border-left: 1px solid #e10808; border-top: 1px solid #e10808; background: #fff; width: 8px; height: 8px; }
+
+.wi-wb a { height: 34px; width: 34px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+
+.wi-wb a:hover { -webkit-box-shadow: 0px 0px 10px 2px skyblue; -moz-box-shadow: 0px 0px 10px 2px skyblue; box-shadow: 0px 0px 10px 2px skyblue; }
+
+.wi-wb .wi { float: left; display: block; margin: 0px 0px 0px 0px; background: url("../images/commodityage/sprites1.png") 0px -60px no-repeat; }
+
+.wi-wb .wb { float: right; display: block; margin: 0px 0px 0px 0px; background: url("../images/commodityage/sprites1.png") -37px -60px no-repeat; }
+
+.follow .img1 { background: url("../images/commodityage/sprites1.png") -156px -63px no-repeat; }
+
+.ww-qr { height: 234px; width: 218px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 4px dashed #b3b3b3; background: #fff; position: absolute; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; top: 24px; left: 20px; display: none; }
+
+.ww-qr p { padding: 0px 10px; background: #f3f3f3; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 25px; color: #666; font-size: 12px; line-height: 25px; border-bottom: 1px solid #e8e8e8; }
+
+.ww-qr .wx-qr { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 25px; background: #000; height: 208px; background: url("../images/commodityage/wi-qr.png") 16px 16px no-repeat; }
+
+#error1, .feedback-error, .feedback-error2, .dipe-error { font-size: 14px; font-weight: 800; width: 25px; height: 25px; position: absolute; text-align: center; top: 0px; right: 10px; cursor: pointer; }
+
+.top-con { width: 562px; float: left; display: block; margin: 0px 0px 0px 0px; padding-right: 20px; border-right: 1px solid #e1e1e1; }
+
+.top-con .font-title { padding: 0px 0px 0px 46px; font-size: 14px; height: 37px; line-height: 37px; color: #636363; }
+
+.top-con .img_1 { background: url("../images/commodityage/sprites1.png") -161px -135px no-repeat; }
+
+.top-con .font-title1 { font-size: 24px; color: #222222; margin-bottom: 10px; }
+
+.top-con .font-con { margin-bottom: 10px; line-height: 20px; color: #e10808; font-size: 12px; }
+
+.Product-Brief { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 24px 20px 28px; background: #f3f4f5; }
+
+.Product-Brief .Price { color: #666666; margin-bottom: 32px; }
+
+.Price-fl { float: left; margin: 0px 0px 0px 0px; }
+
+.Price-fl .color { color: #e10808; margin-left: 16px; }
+
+.Price-fl .unmber { color: #e10808; font-size: 24px; font-weight: 800; margin-right: 24px; }
+
+.Price-fl .deac { text-decoration: line-through; }
+
+.Price-fr { float: right; margin: 0px 0px 0px 0px; }
+
+.Price-fr .Price-link-a { float: left; display: block; margin: 0px 0px 0px 0px; width: 30px; height: 38px; background: url("../images/commodityage/sprites1.png") -92px 0px no-repeat; font-size: 12px; padding: 2px 4px; text-align: center; }
+
+.Price-fr .Price-link-a:hover { text-decoration: underline; }
+
+.Price-fr .Price-link-a1 { float: left; display: block; margin: 0px 0px 0px 0px; border-left: 1px solid #222222; height: 34px; padding: 0px 22px 0px 14px; text-align: center; }
+
+.Price-fr .Price-link-a1 a { color: #1566ef; }
+
+.Price1 { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: #666666; height: 24px; }
+
+.Price1 .color1 { padding: 3px 5px; margin-left: 16px; background: #e10808; color: #fff; }
+
+.Price1 img { vertical-align: middle; }
+
+.Price1 a { color: #e10808; display: inline-block; height: 100%; font-size: 12px; margin-left: 8px; }
+
+.Price1 a:hover { text-decoration: underline; }
+
+.Price1 span { font-size: 12px; color: #e10808; margin-left: 8px; }
+
+.lt-op { padding: 32px 0px 40px 30px; background: #fff; position: relative; }
+
+.lt-op .font-1 { float: left; margin: 0px 16px 0px 0px; font-size: 12px; color: #666; width: 60px; text-align: center; padding: 10px 0px; }
+
+.lt-op .optio-list { float: left; margin: 0px 0px 0px 0px; width: 440px; }
+
+.lt-op .optio-list .font-list { float: left; display: block; margin: 0px 14px 15px 0px; border: 1px solid #e1e1e1; padding: 7px 10px; font-size: 12px; color: #222222; -webkit-transition: none; -o-transition: none; -moz-transition: none; transition: none; }
+
+.lt-op .optio-list .font-list:hover { border: 2px solid #e10808; padding: 6px 9px; background: url("../images/commodityage/i20.png") right bottom no-repeat; }
+
+.lt-op .optio-list .active3 { border: 2px solid #e10808; padding: 6px 9px; background: url("../images/commodityage/i20.png") right bottom no-repeat; }
+
+.optio-list3 { padding: 10px 0px; height: 20px; }
+
+.optio-list3 a { content: ""; float: left; display: block; margin: 0px 14px 0px 0px; background: url("../images/commodityage/sprites1.png") -75px -61px no-repeat; height: 20px; width: 28px; cursor: pointer; }
+
+.optio-list3 .font-bystages { float: left; display: block; margin: 0px 0px 0px 0px; font-size: 12px; color: #666; }
+
+.optio-list3 .font-bystages em { color: #e10808; }
+
+.quatity-number { padding: 10px 0px; }
+
+.quatity-number .qty-nmb { height: 24px; line-height: 24px; color: #222; }
+
+.quatity-number .quatity { border: 1px solid  #e1e1e1; text-align: center; width: 50px; margin-right: 6px; }
+
+.add-rom { padding: 20px 0px 0px; }
+
+.add-rom a { font-size: 16px; float: left; display: block; margin: 0px 15px 0px 0px; width: 170px; height: 48px; text-align: center; line-height: 48px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+
+.add-rom a i { height: 22px; width: 22px; float: left; display: block; margin: 12px 0px 0px 48px; background: url("../images/commodityage/sprites1.png") -128px -58px no-repeat; }
+
+.add-rom a span { float: left; display: block; margin: 0px 0px 0px 4px; }
+
+.add-rom .bg-rom { background: #b9b9b9; }
+
+.add-rom .bg-add { background: #e10808; }
+
+.lt-op-font { padding: 20px 0px; color: #666; font-size: 12px; }
+
+.bystages { width: 550px; height: 305px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #fff; border: 1px solid #e1e1e1; display: none; z-index: 10; top: 307px; left: -94px; padding: 15px 15px 25px; position: absolute; }
+
+.bystages::before, .bystages::after { content: ""; width: 0; height: 0; position: absolute; border: 6px solid transparent; left: 206px; background: transparent; }
+
+.bystages::before { border-bottom-color: #dcdada; top: -13px; }
+
+.bystages::after { top: -12px; z-index: 1; border-bottom-color: #fff; }
+
+.by-icon { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 12px; height: 32px; line-height: 32px; }
+
+.by-icon span { float: left; display: block; margin: 0px 0px 0px 0px; color: #444444; height: 100px; }
+
+.by-icon a { color: #e10808; float: right; display: block; margin: 0px 0px 0px 0px; }
+
+.by-icon a em { float: left; display: block; margin: 0px 0px 0px 0px; }
+
+.by-icon a i { background: url("../images/commodityage/sprites2.png") -90px -78px no-repeat; float: right; display: block; margin: 6px 0px 0px 6px; width: 14px; height: 14px; }
+
+.by-bg { margin: 10px 0px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 64px; background: url("../images/commodityage/sprites2.png") 0px 0px no-repeat; }
+
+.by-con { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.by-con .by-icon1 { color: #444444; font-size: 14px; height: 30px; line-height: 30px; }
+
+.by-con .by-box { background: #f5f5f5; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 122px; }
+
+.by-con .by-box .by-ls { width: 25%; float: left; display: block; margin: 0px 0px 0px 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; text-align: center; height: 30px; line-height: 30px; color: #9d9d9d; font-weight: 600; }
+
+.by-con .by-box .by-ls1 { border-right: 1px solid #e1e1e1; color: #1566ef; font-size: 12px; font-weight: 100; }
+
+.by-con .by-box .by-ls1:nth-child(4n) { border: 0; }
+
+.by-con .by-box .by-ls1 em { color: #e10808; }
+
+.by-con .by-box .by-ls-img { padding: 8px 20px 0px; background: #fff; }
+
+.by-con .by-box .by-ls-img i { background: url("../images/commodityage/sprites2.png") 0px -68px no-repeat; display: block; width: 88px; height: 24px; }
+
+.by-con .by-box1 { border: 1px solid #e1e1e1; }
+
+.top-link { float: left; margin: 0px 0px 0px 14px; height: 100%; width: 190px; }
+
+.recommend-title, .Hibr-title { color: #444444; font-size: 14px; padding: 8px 0px 0px 10px; height: 48px; line-height: 48px; font-weight: 800; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #e1e1e1; }
+
+.recommend-title span, .Hibr-title span { padding-left: 6px; border-left: 3px solid #e10808; }
+
+.recommend-link { width: 100%; }
+
+.recommend-link li { padding: 14px 20px; width: 150px; text-align: center; font-size: 12px; }
+
+.recommend-img { width: 124px; display: block; margin: 0 auto; color: #222; }
+
+.recommend-img p { padding: 5px 0px; }
+
+.recommend-img:hover { text-decoration: underline; color: #e10808; }
+
+.recommend-font { color: #e10808; }
+
+.con-btm { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.con-btm .con-btm-ted { height: 323px; margin-bottom: 20px; }
+
+.con-btm .con-btm-details { position: relative; }
+
+.nav-ted, .det-ted-type { margin: 20px 0px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 54px; background: #f8f8f8; border: 1px solid #e1e1e1; }
+
+.nav-type, .det-type { height: 100%; width: 160px; text-align: center; line-height: 54px; color: #636363; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float: left; display: block; margin: 0px 0px 0px 0px; border-right: 1px solid #e1e1e1; }
+
+.nav-type:hover, .det-type:hover { color: #e10808; }
+
+.teb-active { background: #fff; font-weight: 800; color: #e10808; border-bottom: 4px solid #e10808; }
+
+.list-ted { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #e1e1e1; height: 248px; }
+
+.list-ted .pky-l { width: 224px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 248px; padding: 20px; float: left; margin: 0px 0px 0px 0px; text-align: center; }
+
+.list-ted .pky-l p { color: #e10808; margin-top: 10px; font-size: 12px; }
+
+.list-ted .pky-l .pky-l-font { height: 20px; line-height: 20px; color: #222; overflow: hidden; font-size: 12px; }
+
+.list-ted .pky-l .pky-l-font:hover { text-decoration: underline; color: #e10808; }
+
+.list-ted .pky-l .pky-l-img { margin: 0 auto; display: block; background: url("../images/commodityage/ted-img.png") no-repeat center/cover; width: 160px; height: 160px; }
+
+.list-ted .pky-l::after { content: ''; height: 58px; width: 30px; position: absolute; top: 0px; right: 0px; background: url("../images/commodityage/sprites1.png") 0px 0px no-repeat; }
+
+.list-ted .pky-m { float: left; margin: 0px 0px 0px 0px; width: 760px; border-left: 1px solid #e1e1e1; height: 248px; border-right: 1px solid #e1e1e1; }
+
+.list-ted .pky-r { float: right; margin: 0px 0px 0px 0px; padding: 40px 20px 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 248px; width: 210px; color: #444444; font-size: 12px; }
+
+.list-ted .pky-r .pky-r-title { height: 20px; line-height: 20px; }
+
+.list-ted .pky-r .pky-r-number { color: #e10808; font-size: 24px; font-weight: 800; height: 20px; margin: 10px 0px 14px; }
+
+.list-ted .pky-r .pky-r-font { height: 18px; line-height: 18px; }
+
+.list-ted .pky-r .pky-r-buy { height: 34px; width: 130px; display: block; background: #e10808; line-height: 34px; text-align: center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; font-size: 18px; color: #fff; margin: 10px 0px; }
+
+.list-ted .pky-r .pky-r-foot { height: 20px; line-height: 20px; }
+
+.pky-m-box { position: relative; height: 100%; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.pky-m-box::before, .pky-m-box::after { content: ''; height: 56px; width: 30px; position: absolute; top: 96px; z-index: 1; }
+
+.pky-m-box::before { background: url("../images/commodityage/sprites1.png") -169px 0px no-repeat; left: -29px; }
+
+.pky-m-box::after { background: url("../images/commodityage/sprites1.png") -132px 0px no-repeat; right: -1px; }
+
+.pky-m-list { height: 100%; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: none; }
+
+.pky-m-list .pky-m-l { float: left; margin: 0px 0px 0px 0px; width: 190px; height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 40px 20px 20px; }
+
+.pky-m-list .pky-m-l .pky-m-img { width: 100px; height: 100px; display: block; margin: 5px auto; }
+
+.pky-m-list .pky-m-l .pky-img1 { background: url("../images/commodityage/ted-img3.jpg"); }
+
+.pky-m-list .pky-m-l .pky-img2 { background: url("../images/commodityage/ted-img2.jpg"); }
+
+.pky-m-list .pky-m-l .pky-m-number { margin-top: 10px; height: 28px; line-height: 28px; font-size: 12px; color: #bcbcbc; }
+
+.pky-m-list .pky-m-l .pky-m-number input { vertical-align: middle; }
+
+.pky-m-list .pky-m-l .pky-m-number .pky-m-clr { margin: 0 10px 0px 5px; color: #e10808; font-weight: 600; }
+
+.pky-m-list .pky-m-l .pky-m-font { font-size: 12px; height: 40px; display: block; line-height: 20px; overflow: hidden; color: #555; }
+
+.pky-m-list .pky-m-l .pky-m-font:hover { text-decoration: underline; color: #e10808; }
+
+.db { display: block; }
+
+.details-cot { width: 990px; float: left; margin: 0px 0px 0px 0px; }
+
+.det-ted { width: 990px; margin: 0 auto; }
+
+.det-ted .det-ted-type { width: 990px; height: 52px; margin: 0; }
+
+.det-type { width: 25%; line-height: 52px; }
+
+.det-type:hover .det-bg1 { background: url("../images/commodityage/sprites1.png") 0px -148px no-repeat; }
+
+.det-type:hover .det-bg2 { background: url("../images/commodityage/sprites1.png") -23px -148px no-repeat; }
+
+.det-type:hover .det-bg3 { background: url("../images/commodityage/sprites1.png") -47px -148px no-repeat; }
+
+.det-type:hover .det-bg4 { background: url("../images/commodityage/sprites1.png") -71px -148px no-repeat; }
+
+.det-type .det-bg1 { background: url("../images/commodityage/sprites1.png") 0px -122px no-repeat; }
+
+.det-type .det-bg2 { background: url("../images/commodityage/sprites1.png") -23px -122px no-repeat; }
+
+.det-type .det-bg3 { background: url("../images/commodityage/sprites1.png") -47px -122px no-repeat; }
+
+.det-type .det-bg4 { background: url("../images/commodityage/sprites1.png") -71px -122px no-repeat; }
+
+.det-type .det-type-img { display: inline-block; width: 20px; margin: -4px 4px 0px 0px; vertical-align: middle; height: 20px; }
+
+.position { top: 0px; left: 0px; width: 100%; position: fixed; }
+
+.det-type-i1 { border-bottom: 4px solid #e10808; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: #e10808; }
+
+.det-type-i1 .det-bg1 { background: url("../images/commodityage/sprites1.png") 0px -148px no-repeat; }
+
+.det-type-i1 .det-bg2 { background: url("../images/commodityage/sprites1.png") -23px -148px no-repeat; }
+
+.det-type-i1 .det-bg3 { background: url("../images/commodityage/sprites1.png") -47px -148px no-repeat; }
+
+.det-type-i1 .det-bg4 { background: url("../images/commodityage/sprites1.png") -71px -148px no-repeat; }
+
+.mt { margin-top: 92px; }
+
+.det-list-ted { padding: 10px 15px; }
+
+.det-list-ted .det-list-box { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-top: 20px; }
+
+.det-list-lf { width: 28px; float: left; margin: 0px 0px 0px 0px; height: 500px; }
+
+.det-list-lf .det-l-a { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; background: #494949; color: #fff; padding: 20px 8px; font-size: 12px; font-weight: bold; line-height: 20px; height: 25%; }
+
+.det-list-lf .bia { background: #e10808; -webkit-transition: background 0.5s; -o-transition: background 0.5s; -moz-transition: background 0.5s; transition: background 0.5s; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+
+.det-list-lr { border: 1px solid #e1e1e1; width: 932px; height: 500px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float: left; margin: 0px 0px 0px 0px; overflow: hidden; }
+
+.det-list-lr img { display: none; }
+
+.det-list-lr .det-db { display: block; }
+
+.det-list-title { height: 40px; line-height: 40px; color: #636363; font-size: 22px; }
+
+.br { border-bottom: 1px solid #e1e1e1; }
+
+.teble-box { padding: 10px 0px; }
+
+.teble-box table { border-top: 2px solid #e1e1e1; }
+
+tbody { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-collapse: collapse; border-spacing: 0; }
+
+tbody tr { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+tbody tr td { height: 30px; line-height: 18px; font-size: 12px; padding: 10px; border: 1px solid #e1e1e1; color: #444; }
+
+tbody tr .td-ri { background: #f5fbff; text-align: right; width: 118px; }
+
+tbody tr a { color: #444; }
+
+tbody tr a:hover { text-decoration: underline; color: #e10808; }
+
+.det-des-img { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.det-des-img img { margin: 0 auto; display: block; width: 750px; }
+
+.ete-title { height: 36px; line-height: 36px; padding: 5px 36px; color: #444; border: 1px solid #e1e1e1; }
+
+.ete-title i { color: #e10808; }
+
+.ete-img { display: inline-block; width: 80px; vertical-align: middle; height: 16px; margin-right: 66px; background: url("../images/commodityage/sprites1.png") 0px -100px no-repeat; }
+
+.det-et-li { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.det-et-li .et { float: left; margin: 0px 0px 0px 0px; height: 100%; }
+
+.det-et-li p { height: 25px; line-height: 25px; color: #444; }
+
+.et-lise { padding: 30px; border-bottom: 1px solid #e1e1e1; border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1; }
+
+.et-lise .et-lr { color: #555; width: 565px; }
+
+.et-lise .et-lr .et-time { margin-top: 5px; font-size: 12px; }
+
+.et-lise .et-lf { width: 330px; }
+
+.et-lise .et-lf .fn-zi { font-size: 12px; }
+
+.et-gen { height: 40px; text-align: right; line-height: 40px; }
+
+.et-gen a { color: #e10808; font-size: 12px; padding: 5px 0px 5px 26px; background: url("../images/commodityage/sprites2.png") -108px -66px no-repeat; }
+
+.details-Recommend { width: 200px; border: 1px solid #e1e1e1; float: right; margin: 0px 0px 0px 0px; }
+
+.details-Recommend .Hibr-title { padding: 0px 0px 0px 10px; }
+
+.Hibr-box { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #fff; }
+
+.Hibr-box .Hibr-list { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 200px; padding: 10px; font-size: 12px; }
+
+.Hibr-font { height: 40px; line-height: 20px; color: #515050; overflow: hidden; font-size: 12px; }
+
+.Hibr-font:hover { color: #e10808; text-decoration: underline; }
+
+.Hibr-font2 { line-height: 20px; }
+
+.Hibr-font2 .clr-weight { color: #e10808; font-weight: 600; }
+
+.Hibr-font2 .clr-through { text-decoration: line-through; color: #444444; }
+
+/* 降价提醒 */
+.Opi-ack, .Opi-ack-orgin, .dihangPrice { display: none; position: fixed; background: rgba(0, 0, 0, 0.6); width: 100%; height: 100%; top: 0; right: 0; left: 0; bottom: 0; z-index: 50; }
+
+.Opinion-box, .Opinion-box-shear, .dipe-box { background: #fff; position: relative; top: 30%; left: 40%; }
+
+.Opinion-box .feedback-title, .Opinion-box-shear .feedback-title, .dipe-box .feedback-title { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #1b91eb; padding: 0 10px; height: 34px; line-height: 34px; font-size: 16px; text-align: left; }
+
+.dipe-box { width: 430px; top: 20%; left: 30%; }
+
+.dipe-box-cot { padding: 18px 0px 10px 36px; font-size: 12px; color: #222; }
+
+.dipe-box-cot .dipe-notice { height: 22px; line-height: 22px; }
+
+.dipe-box-cot .notice-number { height: 36px; line-height: 36px; }
+
+.dipe-box-cot .notice-number i { font-weight: 700; }
+
+.dipe-box-cot .New-price { line-height: 22px; padding: 6px 0px; }
+
+.dipe-box-cot .left { width: 64px; color: #666666; text-align: right; float: left; margin: 0px 10px 0px 0px; }
+
+.dipe-box-cot .left i { color: #e10808; }
+
+.dipe-box-cot .dipe-btn { background: #3687fc; display: block; width: 122px; height: 32px; margin: 10px auto; color: #fff; }
+
+.right { float: left; margin: 0px 0px 0px 0px; width: 70%; }
+
+.right input { border: 1px solid #e1e1e1; padding: 5px 6px; height: 22px; box-sizing: border-box; }
+
+.right .true-img { display: inline-block; width: 16px; height: 16px; background: url("../images/duc/true.png"); }
+
+.right .price-error { height: 22px; line-height: 22px; box-sizing: border-box; padding-left: 30px; margin: 2px 0px; width: 222px; display: none; background: url("../images/duc/error.png") 4px 2px no-repeat; }
+
+.right .price-error .font-c { color: #e10808; padding: 3px; background: #c5b2a6; border-radius: 5px; }

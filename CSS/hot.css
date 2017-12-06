@@ -1,0 +1,358 @@
+.info-home{
+    min-width:1200px;
+    font-family: "微软雅黑";
+}
+.info-home *{
+    box-sizing: border-box;
+}
+.sub-nav{
+    width: 1200px;
+    line-height: 40px;
+    font-size: 14px;
+    margin: 10px auto 0 auto;
+}
+.sub-nav i{
+    color:#e10808;
+}
+.hot-body{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.hot-body-left{
+    float: left;
+    width: 860;
+}
+.recommend{
+    width: 860px;
+    position: relative;
+}
+.recommend-box{
+    height: 250px;
+    width: 860px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+.recommend-box ul{
+    width: 3440px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+}
+.recommend-box ul li{
+    width: 860px;
+    height: 248px;
+    float: left;
+    position: relative;
+    border: 1px solid #eaeaea;
+}
+.recommend-img{
+    display: block;
+    float: left;
+}
+.recommend-img img{
+    width: 404px;
+    height: 246px;
+}
+.recommend-info{
+    float: right;
+    width: 420px;
+    height: 248px;
+    padding: 30px 30px 30px 0;
+}
+.recommend-info h1{
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.recommend-info p{
+    font-size: 14px;
+    color: #585858;
+}
+a{
+    color: #232323;
+}
+.recommend-info p a:hover{
+    color:#206eef;
+    text-decoration: underline;
+}
+.info-more{
+    color: #e10808;
+}
+.today-hot{
+    width: 50px;
+    height: 75px;
+    color: #fff;
+    background-color: #e10808;
+    padding: 15px 8px;
+    font-size: 16px;
+    z-index: 10;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+}
+
+/* 指示器 */
+.prevSlide{
+    position: absolute;
+    /* display: block; */
+    display: none;
+    width: 36px;
+    height: 60px;
+    top: 25%;
+    text-indent: -9999px;
+    margin-top: 30px;
+    background: url('../img/hot-sprites.png') no-repeat;
+}
+.nextSlide{
+    position: absolute;
+    /* display: block; */
+    display: none;
+    width: 36px;
+    height: 60px;
+    top: 25%;
+    right: 0;
+    text-indent: -9999px;
+    margin-top: 30px;
+    background: url('../img/hot-sprites.png') no-repeat right top;
+}
+.dot{
+    width: 404px;
+    list-style: none;
+    height: 14px;
+    bottom: 20px;
+    text-align: center;
+    padding-left: 144px;
+    position: absolute;
+}
+.dot li{
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    line-height: 12px;
+    border: 1px solid #fff;
+    background: #000;
+    opacity: .5;
+}
+.recommend-box:hover  a{
+    display: block;
+}
+.dot .active{
+    background: #e10808;
+}
+
+
+/* 智能手机 */
+.sec{
+    width: 860px;
+    margin-bottom: 20px;
+}
+.sec h2{
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+    line-height: 30px;
+}
+.sec h2 span{
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 4px solid #e10808;
+    margin-bottom: -2px;
+    line-height: 36px;
+}
+.sec h2 a{
+    float: right;
+    color:#585858;
+    font-size: 14px;
+}
+.sec-left{
+    float: left;
+    padding: 10px;
+    width: 284px;
+    height: 320px;
+    border: 1px solid #eaeaea;
+}
+.sec-left a img{
+    width: 264px;
+    height: 162px;
+}
+.sec-left h4{
+    height: 50px;
+    line-height: 50px;
+    color:#000;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.sec-left p{
+    font-size: 14px;
+    color: #585858;
+}
+.sec-left h4 a:hover{
+    color:#206eef;
+    text-decoration: underline;
+}
+p a:hover{
+    color: #206eef;
+    text-decoration: underline;
+}
+.sec-right{
+    float: right;
+    padding-right: 10px;
+    width: 560px;
+}
+.sec-right h5{
+    text-align: left;
+    font-size: 18px;
+    height: 18px;
+    line-height: 14px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-left: 3px solid #e10808;
+}
+.sec-right-mid{
+    margin-bottom:13px;
+    padding-bottom:13px;
+    border-bottom:1px dashed #eaeaea; 
+}
+.sec-right-mid-img{
+    float: left;
+    width: 226px;
+    height: 140px;
+    position: relative;
+}
+.sec-right-mid-img p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color:#fff;
+}
+.sec-right-mid-info{
+    float:right;
+    width: 310px;
+    font-size: 14px;
+    color: #585858;
+    padding-top: 5px;
+}
+.sec-right-bot{
+    padding: 15px 30px;
+    height: 120px;
+    background: #f5f7fa;
+    overflow: hidden;
+}
+.sec-right-bot a{
+    float: left;
+    display: inline-block;
+    width: 220px;
+    height: 20px;
+    line-height: 20px;
+    color: #848484;
+    margin: 5px 10px;
+    overflow: hidden;
+}
+.sec-right-bot a:before{
+    content:"●";
+    font-size: 12px;
+    color: #e10808;
+}
+.sec-right-bot a:hover{
+    text-decoration: none;
+    color: #2a2a2a;
+}
+/* 右边 */
+.right{
+    float: right;
+    width: 300px;
+}
+.right-item{
+    padding: 0 15px 15px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+    border-top:4px solid #000;
+}
+.right-item h3{
+    font-size: 18px;
+    color: #e10808;
+    border-bottom: 1px solid #eaeaea;
+    line-height: 40px;
+    font-weight: bold;
+}
+.hot-item{
+    margin:10px 0 15px 0;
+}
+.hot-item-img{
+    float: left;
+}
+.hot-item-info{
+    float: right;
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.hot-item-info{
+    font-size: 14px;
+    color: #898888;
+}
+.hot-item-info:hover{
+    text-decoration: underline;
+}
+.cd-list{
+    margin-left: -13px;
+}
+.cd-list .right-item-sec{
+    display: inline-block;
+    float: left;
+    margin: 10px 0 13px 10px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.right-item-sec:hover{
+    color: #206eef;
+    text-decoration: underline;
+}
+.right-item-sec span{
+    display: inline-block;
+    margin-right:3px;
+    vertical-align:middle;
+    width: 25px;
+    height: 15px;
+    background: url('../img/hot-sprites.png') no-repeat -20px -88px;
+}
+.pro-item{
+    margin: 20px 0 25px;
+}
+.pro-t{
+    display: block;
+    /* font-size: 14px; */
+    margin: 5px 0;
+    height: 40px;
+    line-height: 20px;
+    color: #898888;
+}
+.pro-t:hover{
+    text-decoration: underline;
+}
+.pro-item span{
+    color: #e10808;
+}
+del{
+    color:#898888;
+    margin-left: 5px;
+}

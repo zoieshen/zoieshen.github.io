@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* 内容 */
+.border { border-bottom: 1px solid #f2f2f2; }
+
+.border .head_logo { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 90px; padding: 15px 0px; }
+
+.border .head_logo h1 { width: 200px; height: 52px; border-right: 2px solid #f2f2f2; float: left; display: block; margin: 0px 0px 0px 100px; }
+
+.border .head_logo h1 a { display: block; width: 100%; height: 100%; text-indent: -9999px; background: url("../images/accound/assount1.png") 0px 0px no-repeat; }
+
+.border .head_logo .vehicle { float: left; display: block; margin: 0px 0px 0px 24px; height: 100%; width: 120px; background: url("../images/accound/assount1.png") 0px -388px no-repeat; }
+
+.border .head_logo .assount { float: left; display: block; margin: 0px 0px 0px 360px; width: 134px; height: 62px; }
+
+.border .head_logo .assount a { float: left; display: block; margin: 0px 20px 0px 0px; width: 62px; height: 62px; border-radius: 50%; overflow: hidden; }
+
+.border .head_logo .assount a img { width: 100%; height: 100%; }
+
+.border .head_logo .assount .account-font { float: left; display: block; margin: 0px 0px 0px 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 50px; height: 100%; padding: 10px 0px; line-height: 20px; }
+
+.border .head_logo .assount .account-font span { font-size: 12px; color: #444444; }
+
+.border .head_logo .assount .account-font span em { color: #e14a6d; }
+
+.bg-bnner { height: 240px; }
+
+.bg-bnner a { display: block; width: 100%; height: 100%; background: url("../images/accound/bg-bnner1.jpg"); }
+
+.margin { margin: 10px 0px; width: 100%; }
+
+.margin .accound-contnet { border: 1px solid #d7d7d7; background: #eff8ff; }
+
+.margin .accound-contnet .contnet-lf { background: #eff8ff; width: 204px; height: 100%; border-right: 1px solid #d7d7d7; float: left; display: block; margin: 0px 0px 0px 0px; }
+
+.margin .accound-contnet .contnet-lf .lf-1 { height: 52px; padding: 12px 0px 12px 32px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; }
+
+.margin .accound-contnet .contnet-lf .lf-1 span { height: 100%; width: 100%; display: block; background: url("../images/accound/jlb.png") 0px 0px no-repeat; }
+
+.margin .accound-contnet .contnet-lf .lf-1:hover { background: #1a6aef; }
+
+.margin .accound-contnet .contnet-lf .lf-1:hover span { background: url("../images/accound/jlb2.png") -6px -2px no-repeat; }
+
+.margin .accound-contnet .contnet-lf .contnet-lf2 { width: 100%; background: #eef7fe; padding-bottom: 8px; }
+
+.margin .accound-contnet .contnet-lf .contnet-lf2 .lf2-title { padding: 0px 0px 0px  78px; height: 44px; line-height: 44px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 14px; font-weight: 800; color: #0283d5; }
+
+.margin .accound-contnet .contnet-lf .contnet-lf2 .lf2-img-2 { background: #d9eeff url("../images/accound/account-lf.png") 38px -78px no-repeat; }
+
+.margin .accound-contnet .contnet-lf .contnet-lf2 .lf2-img-1 { background: #d9eeff url("../images/accound/account-lf.png") 38px 4px no-repeat; }
+
+.margin .accound-contnet .contnet-lf .contnet-lf2 .lf2-font { height: 28px; }
+
+.margin .accound-contnet .contnet-lf .contnet-lf2 .lf2-font a { display: block; font-size: 14px; width: 100%; height: 100%; line-height: 28px; color: #232323; text-align: center; background: url("../images/accound/acconud-fl2.jpg") 170px 8px no-repeat; }
+
+.margin .accound-contnet .contnet-lf .contnet-lf2 .lf2-font a:hover { background: #1a6aef; color: #fff; }
+
+.margin .accound-contnet .contnet-lf .lf-3 { display: block; padding: 0px 0px 0px  78px; height: 40px; line-height: 40px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 14px; font-weight: 800; color: #444; margin-top: 1px; }
+
+.margin .accound-contnet .contnet-lf .fl3img-1 { background: #d9eeff url("../images/accound/account-fl3.png") 38px -26px no-repeat; }
+
+.margin .accound-contnet .contnet-lf .fl3img-2 { background: #d9eeff url("../images/accound/account-fl3.png") 38px -67px no-repeat; }
+
+.margin .accound-contnet .contnet-lf .fl3img-1:hover { color: #fff; background: #0989f6 url("../images/accound/accountfl4.png") 38px -26px no-repeat; }
+
+.margin .accound-contnet .contnet-lf .fl3img-2:hover { color: #fff; background: #0989f6 url("../images/accound/accountfl4.png") 38px -67px no-repeat; }
+
+.margin .accound-contnet .contnet-lr { padding: 25px 0px 0px; width: 992px; background: #fff; float: left; display: block; margin: 0px 0px 0px 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.margin .accound-contnet .contnet-lr .con-lf-user { padding: 12px 0px 12px 60px; }
+
+.margin .accound-contnet .contnet-lr .con-lf-user p { height: 24px; line-height: 24px; font-size: 12px; }
+
+.margin .accound-contnet .contnet-lr .con-lf-user .p1 { color: #3c3c3c; font-weight: 800; }
+
+.margin .accound-contnet .contnet-lr .con-lf-user .p2 { padding-left: 12px; color: #999999; }
+
+.margin .accound-contnet .contnet-lr .con-lf-user .p2 span { color: #ff0000; }
+
+.margin .accound-contnet .contnet-lr .con-lf-user .p3 { color: #444444; word-spacing: 4px; }
+
+.margin .accound-contnet .contnet-lr .con-lf-user .p3 a { color: skyblue; }
+
+.margin .accound-contnet .contnet-lr .con-lf-user .p3 a:hover { text-decoration: underline; }
+
+.margin .accound-contnet .contnet-lr .con-lf-user .p4 span { color: #444444; }
+
+.margin .accound-contnet .contnet-lr .con-lf-user .p4 span:last-child { color: #b4b4b4; }
+
+.margin .accound-contnet .contnet-lr .con-lf-inf { padding: 16px 0px 16px 60px; border-bottom: 1px solid #f2f2f2; }
+
+.margin .accound-contnet .contnet-lr .con-lf-inf li { float: left; width: 162px; height: 88px; border-right: 1px dashed #e1e1e1; text-align: center; }
+
+.margin .accound-contnet .contnet-lr .con-lf-inf li h5 { color: #3c3c3c; font-size: 12px; font-weight: 800; }
+
+.margin .accound-contnet .contnet-lr .con-lf-inf li p { margin-bottom: 10px; }
+
+.margin .accound-contnet .contnet-lr .con-lf-inf li p .center { font-size: 36px; width: 100%; font-weight: 800; color: #09a0f6; }
+
+.margin .accound-contnet .contnet-lr .con-lf-inf li .font { font-size: 12px; color: #999999; }
+
+.margin .accound-contnet .contnet-lr .con-lf-inf .inf1 { text-align: left; }
+
+.margin .accound-contnet .contnet-lr .con-lf-inf .inf1 h5 span { color: #09a0f6; margin-left: 5px; font-weight: 100; }
+
+.margin .accound-contnet .contnet-lr .con-lf-inf .inf1 a { margin: 14px 0px 0px 28px; font-size: 36px; width: 100%; font-weight: 800; color: #09a0f6; }
+
+.margin .accound-contnet .contnet-lr .con-lr-news { border-bottom: 1px solid #f2f2f2; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.margin .accound-contnet .contnet-lr .con-lr-news h4 { margin: 20px 0px; padding: 0px 0px 0px 10px; color: #3c3c3c; font-weight: 900; font-size: 16px; line-height: 1em; border-left: 3px solid #04adfc; }
+
+.margin .accound-contnet .contnet-lr .con-lr-news h4 a { color: #3c3c3c; font-weight: 200; font-size: 12px; }
+
+.margin .accound-contnet .contnet-lr .con-lr-news h4 a:hover { color: #04adfc; text-decoration: underline; }
+
+.margin .accound-contnet .contnet-lr .con-lr-news h4 .link-lf { margin-left: 20px; }
+
+.margin .accound-contnet .contnet-lr .con-lr-news h4 i { color: #ff0000; font-size: 12px; font-weight: 900; }
+
+.margin .accound-contnet .contnet-lr .con-lr-news h4 .link-lr { color: #999999; font-size: 14px; float: right; }
+
+.margin .accound-contnet .contnet-lr .con-lr-news ul { height: 94px; line-height: 94px; text-align: center; }
+
+.margin .accound-contnet .contnet-lr .con-lr-news ul .noblock { font-size: 14px; color: #999999; height: 100%; }
+
+.margin .accound-contnet .contnet-lr .con-lr-news ul .img_1 { background: url("../images/accound/email.jpg") 184px 28px no-repeat; }
+
+.margin .accound-contnet .contnet-lr .con-lr-news ul .img_2 { background: url("../images/accound/gouwuche1.jpg") 184px 28px no-repeat; }
+
+.margin .accound-contnet .contnet-lr .ht1 { height: 170px; padding: 16px 20px 16px 60px; }
+
+.margin .accound-contnet .contnet-lr .ht2 { height: 230px; padding: 16px 20px 0px 60px; }
+
+/* 尾部 */
+.foot { height: 96px; border-top: 1px solid #f2f2f2; color: #808080; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 12px; padding: 30px 0 0px; }
+
+.foot p { text-align: center; height: 28px; }
+
+.foot p a { font-size: 12px; color: #808080; }
+
+.foot p a:hover { text-decoration: underline; color: #04adfc; }
+
+.foot p a img { vertical-align: center; }

@@ -1,0 +1,173 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; color:#444;} 
+body, button, input, select, textarea { font:14px, arial, \5b8b\4f53; } 
+h1, h2, h3, h4, h5, h6{ font-size:100%; margin: 0} 
+address, cite, dfn, em, var , i{ font-style:normal; } 
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
+small{ font-size:12px; } 
+ul, ol { list-style:none; } 
+a { text-decoration:none; } 
+a:hover { text-decoration:none; } 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; } 
+legend { color:#000; } 
+fieldset, img { border:0; } 
+button, input, select, textarea { font-size:100%; outline: none;} 
+table { border-collapse:collapse; border-spacing:0; }
+.w{width: 1200px;margin:0 auto}
+.clearfix::after{
+	content: '.';
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+}
+.clearfix{
+	*zoom: 1;
+}
+.w{
+    width: 980px;
+    margin: 0 auto;
+}
+*{
+    box-sizing: border-box;
+    font-family:tahoma,arial,宋体;
+}
+.header{
+    height: 117px;
+    border-bottom: 2px solid #e10808;
+    color:#646464;
+ }
+ .header .h-con-top{
+     width:100%;
+     height: 35px;
+ }
+ .header .h-con-top .h-top-list{
+     float: right;
+     line-height: 35px;
+     font-size: 12px;
+     font-weight: bold;
+     font-family: tahoma, arial, 宋体;
+ }
+ .header .h-con-top .h-top-list a{
+     color:#1565ee;
+ }
+ .header .h-con-top .h-top-list .app-down i{
+    display: block;
+    float: left;
+    width: 11px;
+    height: 17px;
+    margin: 8px 5px 0 0 ;
+     /* padding-left: 11px; */
+     background: url(../images/img-c/sprites_index_2.png) no-repeat left -104px;
+ }
+ .header .h-con-top .h-top-list a:hover{
+     text-decoration: underline;
+ }
+ .header .h-con-top .h-top-list .item{
+     float: left;
+     line-height: 35px;
+ }
+ .header .h-con-top .h-top-list .app-down .J-app-down{
+     position: relative;
+     margin-right:5px;  
+ }
+ .header .h-con-top .h-top-list .app-down .app-down-expanded{
+     width: 140px;
+     height: 146px;
+     line-height: 20px;
+     text-align: center;
+     font-size: 14px;
+     padding: 10px 15px;
+     background: #fff;
+     border: 1px solid #c9c9c9;
+     position: absolute;
+     left: -62px;
+     display: none;
+ }
+ .header .h-con-top .h-top-list .app-down .J-app-down:hover .app-down-expanded{
+     display: block;
+ }
+ .header .h-con-top .h-top-list .pro-tool{
+     margin-right: 10px;
+ }
+ .header .h-con-top .h-top-list .kf_phone{
+     position: relative;
+ }
+ .header .h-con-top .h-top-list .kf_phone:hover .kf_time{
+     display: block;
+ }
+ .header .h-con-top .h-top-list .kf_phone span{
+     padding:0 5px;
+     line-height: 12px;
+     border-left: 2px solid #646464;
+     border-right: 2px solid #646464; 
+     margin-right: 8px;    
+ }
+ .header .h-con-top .h-top-list .kf_phone i{
+     display: block;
+     float:right;
+     width: 0;
+     height: 10px;
+     border:6px solid transparent;
+     border-top-color: #646464;
+     margin: 15px 0 0 5px;
+ }
+ .header .h-con-top .h-top-list .kf_phone .kf_time{
+     position: absolute;
+     padding:10px 15px;
+     line-height: 22px;
+     width: 148px;
+     background: rgba(0,0,0,.6);
+     color:#fff;
+     top: 35px;
+     right: 0;
+     display: none;
+ }
+ .header .h-con-btm{
+     height: 80px;
+     padding: 15px 0;
+     /* background: rgba(0,0,0,.2); */
+ }
+ .header .h-con-btm h1{
+     float: left;
+     width: 200px;
+     height: 50px;
+     background: url(../images/img-c/sprites_index.png) no-repeat 0 0;
+ }
+ .header .h-con-btm h1 a{
+     display: block;
+     height: 100%;
+    text-indent: -99999px;    
+ }
+ .header .h-con-btm .btm-freight{
+     float: left;
+     width: 145px;
+     height: 50px;
+     padding-left: 20px;
+     border-left: 2px solid #f0f0f0;
+     background: url(../images/img-c/sprites_index.png) no-repeat 20px -393px;
+ }
+ .header .h-con-btm .btm-ad{
+     float:right;
+     width: 332px;
+     height: 50px;
+     background: url(../images/img-c/sprites_index_2.png) no-repeat center top; 
+     margin-top: -10px;  
+ }
+ .footer,.footer a{
+	font-size: 12px;
+	color:#808080;
+	text-align: center;
+}
+.footer a{
+	display: inline;    
+}
+.footer{
+	height: 80px;
+	line-height: 80px;
+	border-top: 1px solid #EEE;
+}
+.footer a:hover{
+	text-decoration: underline;
+}

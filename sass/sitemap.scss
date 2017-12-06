@@ -1,0 +1,146 @@
+/* 内容 */
+.stiemap-content{
+    $coolr:#e10808;
+    $bottom:bottom;
+    $px:30px; 
+    padding:55px 0px 0px;
+    .sti-con-top{
+        width: 100%;
+        border-#{$bottom}:2px solid $coolr;
+        text-align:left;
+        margin-#{$bottom}:22px;
+        h5{
+            font-size:20px;
+            height:$px;
+            color:$coolr;
+            width:120px;
+            font-weight:800;
+            border-#{$bottom}:4px solid $coolr;
+        }
+    }
+    .content{
+        $wi:100%;
+        width: $wi;
+        .list-con,.list-con1{
+            &:nth-child(4n){
+                margin-right:0px;
+            }
+        }
+        .list-con1{
+            height: 242px;
+        }
+        .list-con{
+            height:200px;
+        }
+        .list-con,.list-con1{
+            &:hover{
+               border-color:$coolr;
+               h4{
+                   background: $coolr;
+               }
+            }
+            width: 270px;
+            border:1px solid #cdcdcd;
+            -webkit-border-radius:3px;
+               -moz-border-radius:3px;
+                    border-radius:3px;
+            float:left;
+            -webkit-box-sizing:border-box;
+               -moz-box-sizing:border-box;
+                    box-sizing:border-box;
+            margin:0px 36px 32px 0px;
+            -webkit-transition:all 0.8s;
+            -o-transition:all 0.8s;
+            -moz-transition:all 0.8s;
+            transition:all 0.8s;            
+            h4{
+                width: $wi;
+                height: $px;
+                display:-webkit-box;
+                display:-webkit-flex;
+                display:-moz-box;
+                display:-ms-flexbox;
+                display:flex;
+                font-size:18px;
+                font-weight:800;
+                background: #9b9b9b;
+                text-align:center;
+                -webkit-box-pack:center;
+                -webkit-justify-content:center;
+                   -moz-box-pack:center;
+                    -ms-flex-pack:center;
+                        justify-content:center;
+                -webkit-box-align:center;
+                -webkit-align-items:center;
+                   -moz-box-align:center;
+                    -ms-flex-align:center;
+                        align-items:center;
+                -webkit-transition:all 0.5s;
+                -o-transition:all 0.5s;
+                -moz-transition:all 0.5s;
+                transition:all 0.5s;
+                .img,.img1,.img2{
+                    width: 20px;
+                    height: 20px;
+                }
+                .img1{
+                    width: 46px;
+                }
+                .img2{
+                    height: 18px;
+                    padding:0px 5px 0px 0px ;
+                }
+                .img_0 {
+                    background: url("../images/Sitemap/tuomi2.png") 0px  -40px no-repeat;
+                }
+                .img_6{
+                    background: url("../images/Sitemap/tuomi2.png") -125px  -40px no-repeat;
+                }
+                .img_7{
+                    background: url("../images/Sitemap/tuomi2.png") -152px  -40px no-repeat;
+                }
+                @for $i from 1 through 5{
+                    .img_#{$i} {background: url("../images/Sitemap/tuomi2.png") $i * -20px  -40px no-repeat;}
+                }
+                @for $i from 1 through 6{
+                    .img1_#{$i} {background: url("../images/Sitemap/stiemap#{$i}.png")no-repeat;}
+                }
+
+            }
+            .link-a{
+                padding:10px;
+                width:$wi;
+                -webkit-box-sizing:border-box;
+                   -moz-box-sizing:border-box;
+                        box-sizing:border-box;
+                display:-webkit-box;
+                display:-webkit-flex;
+                display:-moz-box;
+                display:-ms-flexbox;
+                display:flex;
+                -webkit-flex-wrap:wrap;
+                    -ms-flex-wrap:wrap;
+                        flex-wrap:wrap;
+                -webkit-box-pack:justify;
+                -webkit-justify-content:space-between;
+                   -moz-box-pack:justify;
+                    -ms-flex-pack:justify;
+                        justify-content:space-between;
+                a{
+                    color:#000;
+                    // margin-left:20px;
+                    height: 25px;
+                    width: 50%;
+                    font-size:12px;
+                    em{
+                        padding:0px 10px;
+                        color:#9f9f9f;
+                    }
+                    &:hover{
+                        color:$coolr;
+                    }
+                }
+            }
+        }
+    }
+}

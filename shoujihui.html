@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/shiujihui.css">
+</head>
+
+<body>
+    <div id="box">
+        <div class="fiexd-right">
+            <div class="fiexd-right-con">
+                <div class="present">
+                    <a href="register.html" class="present-in"></a>
+                    <a href="##" class="newuser">新人专享</a>
+                </div>
+                <div class="userArea">
+                    <i class="userArea-i"></i>
+                    <div class="login-up hide">
+                        <form action="">
+                            <div class="user-item">
+                                <label for="userName" class="f_label">用户名：</label>
+                                <input type="text" id="userName" name="userName" class="user-input" maxlength="50" value="">
+                            </div>
+                            <div class="user-item">
+                                <label for="passWord" class="f_label">密码：</label>
+                                <input type="password" id="passWord" name="passWord" class="user-input" value="">
+                            </div>
+                            <p class="f_tips"></p>
+                            <a href="javascript:;" class="sub_btn">登录</a>
+                            <p class="forgetpwd">
+                                <a target="_blank" href="##">忘记密码？</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="shopcar">
+                    <a href="##" class="shopcar-a">
+                        <i class="shopcar-icon"></i>
+                        购物车
+                        <em class="shopcar-em">0</em>
+                    </a>
+                </div>
+                <div class="rigth-kf">
+                    <a href="##"></a>
+                    <div class="rigth-kf-div">联系客服</div>
+                </div>
+                <div class="haudong">
+                    <a href="##" title="返回顶部"></a>
+                </div>
+            </div>
+            <div class="fiexd-right-box">
+                <h2>
+                    购物车
+                    <i class="nav_car_times" data-times="3600">库存有限，保留
+                        <i id="minute_show"></i>
+                        <i id="second_show"></i>
+                    </i>
+                    <i class="nav_car_close"></i>
+                </h2>
+                <div class="cart_con">
+                    <div class="cart_list_box" id="cart_list_box">
+                        <ul class="cart_list"></ul>
+                    </div>
+                    <div class="car_list_total">
+                        <span>
+                            <b class="car_total_price">¥
+                                <i class="car_total_price_i">0</i>
+                            </b>
+                            <br>
+                            <b class="car_total_num">共
+                                <i class="car_con_num">0</i>件商品</b>
+                        </span>
+                        <a href="cart.html" target="_blank">去购物车结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a">
+            <!-- 顶部 -->
+            <div class="toolbar-bg">
+                <div class="toolbar w">
+                    <div class="toolbar-left">
+                        <p class="tl-unlogin">
+                            <a href="#" class="tl-unlogin-a">您好!&nbsp;请登录</a>
+                            <span class="tl-unlogin-span">|</span>
+                            <a href="register.html" class="tl-unlogin-aa">注册</a>
+                        </p>
+                    </div>
+                    <div class="toolbar-right">
+                        <ul class="toolbar-rigth-ul clearfix">
+                            <li>
+                                <div class="toolbar-right-div">
+                                    <a href="account.html" class="toolbar-right-a">我的账户</a>
+                                    <i class="toolbar-right-icon"></i>
+                                </div>
+                                <div class="toolbar-right-hidden">
+                                    <a href="account.html" target="_blank">我的订单</a>
+                                    <a href="account.html" target="_blank">我的小强币</a>
+                                    <a href="account.html" target="_blank">我的关注</a>
+                                    <a href="account.html" target="_blank">我的优惠券</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toolbar-right-div toolbar-right-div1">
+                                    <a href="account.html" class="toolbar-right-a">我的消息</a>
+                                    <span class="nav-message">0</span>
+                                    <i class="toolbar-right-icon"></i>
+                                </div>
+                                <div class="toolbar-right-hidden toolbar-right-hidden1">
+                                    暂无消息
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toolbar-right-div">
+                                    <a href="shopingCompass.html" class="toolbar-right-a">客户服务</a>
+                                    <i class="toolbar-right-icon"></i>
+                                </div>
+                                <div class="toolbar-right-hidden clearfix toolbar-right-hidden2">
+                                    <span class="tel">客服热线:0755-88698888</span>
+                                    <a href="#" target="_blank">在线客服</a>
+                                    <a href="shopingCompass.html" target="_blank">售后服务</a>
+                                    <a href="#" target="_blank">意见反馈</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toolbar-right-div">
+                                    <a href="#" class="toolbar-right-a">关注我们</a>
+                                    <i class="toolbar-right-icon"></i>
+                                </div>
+                                <div class="toolbar-right-hidden toolbar-focus">
+                                    <a href="javascript:;" class="ios">数一数二APP</a>
+                                    <a href="javascript:;" class="shop">华强北商城</a>
+                                    <a href="javascript:;" class="weixin">官方微信</a>
+                                    <a href="#" target="_blank" class="next"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 搜索栏 -->
+            <div class="w search">
+                <div class="search-left">
+                    <a href="index.html">
+                        <h1 class="login">华强北商城</h1>
+                    </a>
+                    <a href="register.html">
+                        <h2 class="register"></h2>
+                    </a>
+                </div>
+                <div class="search-right clearfix">
+                    <div class="search-search clearfix">
+                        <input type="text" placeholder="请输入搜索关键字">
+                        <!-- <label for=""></label> -->
+                        <button>
+                            <i></i>
+                        </button>
+                        <div class="search-list">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="start">苹果8开售</a>
+                                </li>
+                                <li>
+                                    <a href="#">7P 2568G ￥6288</a>
+                                </li>
+                                <li>
+                                    <a href="#">MacBook Air ￥5999</a>
+                                </li>
+                                <li>
+                                    <a href="#">p10 plus￥3488</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search-car">
+                        <a href="cart.html" class="clearfix">
+                            <i>0</i>
+                            <span></span>
+                            我的购物车&nbsp;>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 菜单 -->
+            <div class="new-menu">
+                <div class="w menu-first">
+                    <ul class="clearfix menu-v1">
+                        <li class="current menu-li">
+                            <i></i>
+                            <a href="#">商品分类</a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li class="menu-li hw">
+                            <a href="overseas.html">海外淘</a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="#">手机惠</a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="cyberport.html">数码港</a>
+                        </li>
+                        <li class="sub-list sub-list-ensure">
+                            <a href="you.html" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-two clearfix">
+                    <div class="sale-list-nav">
+                        <dl>
+                            <dt>
+                                <span class="list-nav-icon1"></span>手机通讯
+                                <ul class="sale-list-item">
+                                    <li>
+                                        <a href="#" target="_blank">华为</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">魅族</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">小米</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">三星</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">酷派</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">乐视</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">美图</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">联想</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">诺基亚</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">更多&gt;&gt;</a>
+                                    </li>
+                                </ul>
+                                <i></i>
+                            </dt>
+                            <dt>
+                                <span class="list-nav-icon2"></span>苹果专区
+                                <ul class="sale-list-item">
+                                    <li>
+                                        <a href="#" target="_blank">iphone</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">ipad</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">ipod</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">Mac</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">iphone贴膜</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">iphone保护壳</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">ipad贴膜</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">ipad保护壳</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">苹果原装配件</a>
+                                    </li>
+                                </ul>
+                                <i></i>
+                            </dt>
+                            <dt>
+                                <span class="list-nav-icon3"></span>手机配件
+                                <div class="sale-list-item">
+                                    <a href="#" target="_blank">保护套/壳</a>
+                                    <a href="#" target="_blank">手机贴膜</a>
+                                    <a href="#" target="_blank">充电器/数据线</a>
+                                    <a href="#" target="_blank">移动电源</a>
+                                    <a href="#" target="_blank">创意配件</a>
+                                    <a href="#" target="_blank">蓝牙耳机</a>
+                                </div>
+                                <i></i>
+                            </dt>
+                            <dt>
+                                <span class="list-nav-icon4"></span>视听/数码配件
+                                <div class="sale-list-item">
+                                    <a href="#" target="_blank">耳机耳麦</a>
+                                    <a href="#" target="_blank">音箱/音响</a>
+                                    <a href="#" target="_blank">投影仪</a>
+                                    <a href="#" target="_blank">阴影播放器</a>
+                                    <a href="#" target="_blank">网络盒子</a>
+                                    <a href="#" target="_blank">存储卡</a>
+                                    <a href="#" target="_blank">影音配件</a>
+                                </div>
+                                <i></i>
+                            </dt>
+                            <dt>
+                                <span class="list-nav-icon5"></span>电脑办公
+                                <div class="sale-list-item">
+                                    <a href="#" target="_blank">平板/笔记本</a>
+                                    <a href="#" target="_blank">一体机</a>
+                                    <a href="#" target="_blank">打印机/耗材</a>
+                                    <a href="#" target="_blank">移动硬盘</a>
+                                    <a href="#" target="_blank">U盘</a>
+                                    <a href="#" target="_blank">鼠标</a>
+                                    <a href="#" target="_blank">键盘/套装</a>
+                                    <a href="#" target="_blank">散热器</a>
+                                    <a href="#" target="_blank">路由器</a>
+                                    <a href="#" target="_blank">电源插座</a>
+                                    <a href="#" target="_blank">电脑工具</a>
+                                </div>
+                                <i></i>
+                            </dt>
+                            <dt>
+                                <span class="list-nav-icon6"></span>智能/生活
+                                <div class="sale-list-item">
+                                    <a href="#" target="_blank">智能穿戴</a>
+                                    <a href="#" target="_blank">智能家居</a>
+                                    <a href="#" target="_blank">小家电</a>
+                                    <a href="#" target="_blank">健康监测</a>
+                                    <a href="#" target="_blank">户外运动</a>
+                                    <a href="#" target="_blank">无人机</a>
+                                    <a href="#" target="_blank">汽车用品</a>
+                                    <a href="#" target="_blank">智能机器人</a>
+                                    <a href="#" target="_blank">益智玩具</a>
+                                </div>
+                                <i></i>
+                            </dt>
+                            <dt>
+                                <span class="list-nav-icon7"></span>摄影摄像
+                                <div class="sale-list-item">
+                                    <a href="#" target="_blank">摄像机</a>
+                                    <a href="#" target="_blank">单反相机</a>
+                                    <a href="#" target="_blank">单电/微单相机</a>
+                                    <a href="#" target="_blank">数码相机</a>
+                                    <a href="#" target="_blank">运动相机</a>
+                                    <a href="#" target="_blank">拍立得</a>
+                                    <a href="#" target="_blank">镜头</a>
+                                    <a href="#" target="_blank">摄像配件</a>
+                                </div>
+                                <i></i>
+                            </dt>
+                            <dt>
+                                <span class="list-nav-icon8"></span>游戏/周边
+                                <div class="sale-list-item">
+                                    <a href="#" target="_blank">游戏主机</a>
+                                    <a href="#" target="_blank">游戏手柄</a>
+                                    <a href="#" target="_blank">游戏控制器</a>
+                                    <a href="#" target="_blank">游戏配件</a>
+                                    <a href="#" target="_blank">配件/其他</a>
+                                </div>
+                                <i></i>
+                            </dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播 -->
+            <div class="body-ok">
+                <div class="body-banner">
+                    <ul class="banner-ul">
+                        <li>
+                            <a href="CommodityPage.html">
+                                <img src="./images/img/2-lunbo-1.jpg" alt="" class="banner-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="CommodityPage.html">
+                                <img src="./images/img/2-lunbo-2.jpg" alt="" class="banner-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="CommodityPage.html">
+                                <img src="./images/img/2-lunbo-3.jpg" alt="" class="banner-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="qng.html ">
+                                <img src="./images/img/2-lunbo-4.jpg" alt="" class="banner-img">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="dot">
+
+                    </ul>
+                    <a href="javascript:;" class="prev"></a>
+                    <a href="javascript:;" class="next"></a>
+                </div>
+            </div>
+        </div>
+        <!-- 楼层 -->
+        <div class="body-floor w">
+            <!-- <div class="content"> -->
+            <!-- 货比三家 -->
+            <div class="content-1">
+                <div class="mod-t curr">
+                    <h2>货比三家</h2>
+                </div>
+                <ul class="td-list clearfix">
+                    <li class="clearfix">
+                        <div class="content1-picture">
+                            <a href="##">
+                                <img src="./images/img/1-1.jpg" alt="">
+                            </a>
+                            <div class="hidden">
+                                <div class="content1-hid">
+                                    <h2>我们敢比价
+                                        <i>京东商城&nbsp;¥3188</i>
+                                    </h2>
+                                    <p>京东商城
+                                        <span>¥3188</span>
+                                    </p>
+                                    <p>一号店
+                                        <span>¥3188</span>
+                                    </p>
+                                    <p>苏宁易购
+                                        <span>¥3188</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content1-info">
+                            <h2>
+                                <i></i>TOP1</h2>
+                            <a href="##" class="content1-info-a1">iPad mini 4</a>
+                            <a href="##" class="content1-info-a2">/</a>
+                            <p>¥
+                                <b>2999</b>
+                            </p>
+                            <a href="##" class="content1-info-a3">立即购买</a>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="content1-picture">
+                            <a href="##">
+                                <img src="./images/img/1-2.jpg" alt="">
+                            </a>
+                            <div class="content1-hid">
+                                <h2>我们敢比价
+                                    <i>京东商城&nbsp;¥3188</i>
+                                </h2>
+                                <p>京东商城
+                                    <span>¥3499</span>
+                                </p>
+                                <p>一号店
+                                    <span>¥3499</span>
+                                </p>
+                                <p>苏宁易购
+                                    <span>¥3499</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content1-info">
+                            <h2>
+                                <i class="content1-info-2"></i>TOP2</h2>
+                            <a href="##" class="content1-info-a1">华为 Mate 9</a>
+                            <a href="##" class="content1-info-a2">/</a>
+                            <p>¥
+                                <b>3099</b>
+                            </p>
+                            <a href="##" class="content1-info-a3">立即购买</a>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="content1-picture">
+                            <a href="##">
+                                <img src="./images/img/1-3.jpg" alt="">
+                            </a>
+                            <div class="content1-hid">
+                                <h2>我们敢比价
+                                    <i>京东商城&nbsp;¥3188</i>
+                                </h2>
+                                <p>京东商城
+                                    <span>¥5688</span>
+                                </p>
+                                <p>一号店
+                                    <span>¥5688</span>
+                                </p>
+                                <p>苏宁易购
+                                    <span>¥5688</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content1-info">
+                            <h2>
+                                <i class="content1-info-3"></i>TOP2</h2>
+                            <a href="##" class="content1-info-a1">三星 GALAXY S8</a>
+                            <a href="##" class="content1-info-a2">曲面大屏体验升级</a>
+                            <p>¥
+                                <b>3099</b>
+                            </p>
+                            <a href="##" class="content1-info-a3">立即购买</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 一楼 -->
+            <div class="content-2">
+                <div class="mod-t clearfix">
+                    <h2>1F&nbsp;苹果国行专区</h2>
+                    <a href="##">查看更多>></a>
+                </div>
+                <div class="mod-list">
+                    <ul class="mod-ul1">
+                        <li>
+                            <a href="##">
+                                <img data-original="./images/img/floor1_1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <a href="##">
+                                    <img data-original="./images/img/floor1_2.jpg" alt="">
+                                </a>
+                                <div class="floor-1-float">
+                                    <p class="t1">iPhone 7 Plus 32GB</p>
+                                    <p class="t2">下单立减</p>
+                                    <p class="t3">¥5399</p>
+                                </div>
+                            </div>
+                            <div class="floor-1-top">
+                                <a href="##">
+                                    <img data-original="./images/img/floor1_3.jpg" alt="">
+                                </a>
+                                <div class="floor-1-float">
+                                    <p class="t1">iPhone 6S Plus 32GB</p>
+                                    <p class="t2">果粉大屏控首选</p>
+                                    <p class="t3">¥4028</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor1_4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>2999</i>
+                                        <del>市场价:￥4388</del>
+                                    </p>
+                                    <a href="##" target="_blank">Apple/苹果 iPad mini 4 7.9英寸 WIFI版 国行 金色 128G</a>
+                                </div>
+                            </div>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor1-5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>6466</i>
+                                        <del>市场价:￥6466</del>
+                                    </p>
+                                    <a href="##" target="_blank">Apple/苹果 iPhone 7 Plus A1661 全网通 国行手机 亮黑色 128G</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor1_6.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>4788</i>
+                                        <del>市场价:￥7888</del>
+                                    </p>
+                                    <a href="##" target="_blank">Apple/苹果 iPhone 6s Plus A1699 全网通 国行手机 玫瑰金色 128GB</a>
+                                </div>
+                            </div>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor1_7.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>6049</i>
+                                        <del>市场价:￥6988</del>
+                                    </p>
+                                    <a href="##" target="_blank">Apple/苹果 MacBook air 13.3英寸 2017年 MQD32CH/A 128GB</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor1_8.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>2799</i>
+                                        <del>市场价:￥3188</del>
+                                    </p>
+                                    <a href="##" target="_blank">Apple/苹果 Watch Series 2 38mm铝金属表壳 智能手表 黑色 运动</a>
+                                </div>
+                            </div>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor1_9.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <b>10888</b>
+                                        <del>市场价:￥11888</del>
+                                    </p>
+                                    <a href="##" target="_blank">Apple/苹果 MacBook Pro 2017年 13英寸笔记本 MPXT2CH/A 256GB 深空灰</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 二楼 -->
+            <div class="content-3">
+                <div class="mod-t clearfix">
+                    <h2>2F&nbsp;品牌大咖秀</h2>
+                    <a href="##">查看更多>></a>
+                </div>
+                <div class="mod-list-3">
+                    <ul class="mod-ul clearfix">
+                        <li class="te">
+                            <div class="floor-3-top">
+                                <a href="##">
+                                    <img src="./images/img/floor-3-top-1.jpg" alt="">
+                                    <div class="floor-3-top-info">
+                                        <img src="./images/img/floor-3-top-2.png" alt="">
+                                        <h2>－华为Mate 9 炫酷上市－</h2>
+                                        <p>华为nova全网通低至1655</p>
+                                        <span>立即进入</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <a href="##">
+                                    <img data-original="./images/img/floor-3-左2-1.jpg" alt="">
+                                </a>
+                                <div class="floor-1-float">
+                                    <p class="t1">华为 畅享6S</p>
+                                    <p class="t2">细节一刻也不容错过</p>
+                                    <p class="t3">¥4028</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-左2-21.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>5466</i>
+                                        <del>市场价:￥5999</del>
+                                    </p>
+                                    <a href="##" target="_blank">Samsung/三星 GALAXY S8 双卡双待 全网通 手机 午夜黑 4+64GB</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-左3-31.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>1799</i>
+                                        <del>市场价:￥2699</del>
+                                    </p>
+                                    <a href="##" target="_blank">魅族 PRO 6s 全网通 双卡双待 手机 4GB+64GB 香槟金</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-左4-41.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>2728</i>
+                                        <del>市场价:￥3599</del>
+                                    </p>
+                                    <a href="##" target="_blank">Huawei/华为 荣耀V9 全网通4G 手机 6GB+64GB 幻夜黑</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="mod-ul difer clearfix">
+                        <li class="te">
+                            <div class="floor-3-top">
+                                <a href="##">
+                                    <img src="./images/img/2-1.jpg" alt="">
+                                    <div class="floor-3-top-info">
+                                        <img src="./images/img/2-16.jpg" alt="">
+                                        <h2>－小米MIX 现货闪发－</h2>
+                                        <p>小米5s直降100价比官网</p>
+                                        <span>立即进入</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <a href="##">
+                                    <img data-original="./images/img/2-2.jpg" alt="">
+                                </a>
+                                <div class="floor-1-float">
+                                    <p class="t1">魅族 PRO 6s 64GB 香槟金</p>
+                                    <p class="t2">经典用不褪色</p>
+                                    <p class="t3">¥1799</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/2-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>2999</i>
+                                        <del>市场价:￥4199</del>
+                                    </p>
+                                    <a href="##" target="_blank">Huawei/华为 P10 全网通4G 双卡双待手机 4GB+64GB 钻雕蓝</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/2-4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>2849</i>
+                                        <del>市场价:￥2999</del>
+                                    </p>
+                                    <a href="##" target="_blank">Huawei/华为 荣耀9 全网通 手机 6GB+128GB 海鸥灰</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/2-5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>3399</i>
+                                        <del>市场价:￥3699</del>
+                                    </p>
+                                    <a href="##" target="_blank">MI/小米 MIX2 全网通 移动联通电信4G手机 黑色 6GB+64GB</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="difer mod-ul clearfix">
+                        <li class="te">
+                            <div class="floor-3-top">
+                                <a href="##">
+                                    <img src="./images/img/2-6.jpg" alt="">
+                                    <div class="floor-3-top-info">
+                                        <img src="./images/img/2-17.jpg" alt="">
+                                        <h2>－骁龙821神器仅售2255－</h2>
+                                        <p>智能硬件下单立减</p>
+                                        <span>立即进入</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <a href="##">
+                                    <img data-original="./images/img/2-7.jpg" alt="">
+                                </a>
+                                <div class="floor-1-float">
+                                    <p class="t1">小米6 64GB 亮黑</p>
+                                    <p class="t2">小米年度旗舰</p>
+                                    <p class="t3">¥2699</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/2-8.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>3099</i>
+                                        <del>市场价:￥5088</del>
+                                    </p>
+                                    <a href="##" target="_blank">Samsung/三星 S7 edge （G9350) 全网通 星钻黑 32GB</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/2-9.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>2588</i>
+                                        <del>市场价:￥2699</del>
+                                    </p>
+                                    <a href="##" target="_blank">Samsung/三星 C9 Pro C9000 全网通 4G手机 双卡双待 6GB+64GB 枫叶金</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/2-10.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>3269</i>
+                                        <del>市场价:￥5600</del>
+                                    </p>
+                                    <a href="##" target="_blank">Meitu/美图 T8 全网通4G 手机 4GB+128GB 玫瑰金</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="difer mod-ul clearfix">
+                        <li class="te">
+                            <div class="floor-3-top">
+                                <a href="##">
+                                    <img src="./images/img/2-11.jpg" alt="">
+                                    <div class="floor-3-top-info">
+                                        <img src="./images/img/floor-3-top-8.png" alt="">
+                                        <h2>－华为Mate 9 炫酷上市－</h2>
+                                        <p>华为nova全网通低至1655</p>
+                                        <span>立即进入</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <a href="##">
+                                    <img data-original="./images/img/2-12.jpg" alt="">
+                                </a>
+                                <div class="floor-1-float">
+                                    <p class="t1">OPPO R11 玫瑰金色</p>
+                                    <p class="t2">更大弧度·独具一格</p>
+                                    <p class="t3">¥2799</p>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/2-13.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>5466</i>
+                                        <del>市场价:￥5999</del>
+                                    </p>
+                                    <a href="##" target="_blank">Samsung/三星 GALAXY S8 双卡双待 全网通 手机 午夜黑 4+64GB</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/2-14.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>1799</i>
+                                        <del>市场价:￥2699</del>
+                                    </p>
+                                    <a href="##" target="_blank">魅族 PRO 6s 全网通 双卡双待 手机 4GB+64GB 香槟金</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/2-15.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>2728</i>
+                                        <del>市场价:￥3599</del>
+                                    </p>
+                                    <a href="##" target="_blank">Huawei/华为 荣耀V9 全网通4G 手机 6GB+64GB 幻夜黑</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="mod-logo clearfix">
+                        <li>
+                            <a href="##">
+                                <img src="./images/img/22-1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <img src="./images/img/22-2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <img src="./images/img/22-3.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <img src="./images/img/22-4.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <img src="./images/img/22-5.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <img src="./images/img/22-6.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 三楼 -->
+            <div class="content-4">
+                <div class="mod-t clearfix">
+                    <h2>3F&nbsp;爆款推荐</h2>
+                    <a href="##">查看更多>></a>
+                </div>
+                <div class="mod-list-4">
+                    <ul class="mod-ul clearfix">
+                        <li>
+                            <div class="mod-icon"></div>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>5436</i>
+                                        <del>市场价:￥5999</del>
+                                    </p>
+                                    <a href="##" target="_blank">Samsung/三星 GALAXY S8 双卡双待 全网通 手机 午夜黑 4+64GB</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mod-icon"></div>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>5466</i>
+                                        <del>市场价:￥5999</del>
+                                    </p>
+                                    <a href="##" target="_blank">Samsung/三星 GALAXY S8 双卡双待 全网通 手机 午夜黑 4+64GB</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="mod-icon"></div>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>5466</i>
+                                        <del>市场价:￥5999</del>
+                                    </p>
+                                    <a href="##" target="_blank">Samsung/三星 GALAXY S8 双卡双待 全网通 手机 午夜黑 4+64GB</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mod-icon"></div>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>1799</i>
+                                        <del>市场价:￥2699</del>
+                                    </p>
+                                    <a href="##" target="_blank">魅族 PRO 6s 全网通 双卡双待 手机 4GB+64GB 香槟金</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mod-icon"></div>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>2728</i>
+                                        <del>市场价:￥5999</del>
+                                    </p>
+                                    <a href="##" target="_blank">Huawei/华为 荣耀V9 全网通4G 手机 6GB+64GB 幻夜黑</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="mod-ul difer clearfix">
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-6.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>5466</i>
+                                        <del>市场价:￥5999</del>
+                                    </p>
+                                    <a href="##" target="_blank">Samsung/三星 GALAXY S8 双卡双待 全网通 手机 午夜黑 4+64GB</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-7.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>5466</i>
+                                        <del>市场价:￥5999</del>
+                                    </p>
+                                    <a href="##" target="_blank">Samsung/三星 GALAXY S8 双卡双待 全网通 手机 午夜黑 4+64GB</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-8.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>2999</i>
+                                        <del>市场价:￥4199</del>
+                                    </p>
+                                    <a href="##" target="_blank">Huawei/华为 P10 全网通4G 双卡双待手机 4GB+64GB 钻雕蓝</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-9.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>2849</i>
+                                        <del>市场价:￥2999</del>
+                                    </p>
+                                    <a href="##" target="_blank">Huawei/华为 荣耀9 全网通 手机 6GB+128GB 海鸥灰</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="floor-1-top">
+                                <div class="mod-img">
+                                    <a href="##">
+                                        <img data-original="./images/img/floor-3-10.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mod-info">
+                                    <p>￥
+                                        <i>3399</i>
+                                        <del>市场价:￥3699</del>
+                                    </p>
+                                    <a href="##" target="_blank">MI/小米 MIX2 全网通 移动联通电信4G手机 黑色 6GB+64GB</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        <!-- 底部 -->
+        <div class="foot">
+            <div class="Sale-support w">
+                <img data-original="./images/img/guarantee.png" alt="">
+            </div>
+        </div>
+        <div class="foot1">
+            <div class="w footer clearfix">
+                <div class="footer-left">
+                    <i></i>
+                    <p>华强北商城旗下</p>
+                    <p>精品数码导购APP</p>
+                </div>
+                <div class="footer-mid">
+                    <ul class="footer-mid-ul clearfix">
+                        <li>
+                            <h3>新手指南</h3>
+                            <a href="shopingCompass.html">找回密码</a>
+                            <a href="shopingCompass.html">注册条款</a>
+                            <a href="shopingCompass.html">交易条款</a>
+                        </li>
+                        <li>
+                            <h3>支付配送</h3>
+                            <a href="shopingCompass.html">网上支付</a>
+                            <a href="shopingCompass.html">配送运费</a>
+                            <a href="shopingCompass.html">配送方式</a>
+                            <li>
+                                <h3>售后服务</h3>
+                                <a href="shopingCompass.html">售后政策</a>
+                                <a href="shopingCompass.html">售后流程</a>
+                                <a href="shopingCompass.html">售后流程</a>
+                            </li>
+                            <li>
+                                <h3>关于我们</h3>
+                                <a href="comin.html">公司简介</a>
+                                <a href="##">隐私声明</a>
+                                <a href="##">招贤纳士</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <div class="contact-us">
+                        <h3>联系我们</h3>
+                        <p>客服热线：0755-88698888</p>
+                        <a href="shopingCompass.html">意见反馈</a>
+                    </div>
+                    <div class="attention-us clearfix">
+                        <h3>关注我们</h3>
+                        <div class="weixin">
+                            <div class="weixincod"></div>
+                        </div>
+                        <div class="qq">
+                            <div class="qqcod">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="safe w">
+            <ul class="clearfix">
+                <li>
+                    <a href="index.html">华强北商城</a>
+                </li>
+                <li>
+                    <a href="index.html">华强北</a>
+                </li>
+                <li>
+                    <a href="index.html">深圳华强北</a>
+                </li>
+                <li class="hong">
+                    <a href="hot.html">热点资讯</a>
+                </li>
+                <li>
+                    <a href="frlEndlink.html">友情链接</a>
+                </li>
+                <li>
+                    <a href="Sitemap.html">网站地图</a>
+                </li>
+                <li class="hong">
+                    <a href="supplier.html">商家入驻/集团采购</a>
+                </li>
+                <li class="no">
+                    <a href="shopingCompass.html">帮助中心</a>
+                </li>
+            </ul>
+            <p>Copyright © 2010-2016 深圳市华强北在线商务有限公司 版权所有
+                <a href="##">粤ICP备12050212号-1</a>
+                </a>
+            </p>
+            <ol class="">
+                <li>
+                    <a href="##"></a>
+                </li>
+                <li>
+                    <a href="##"></a>
+                </li>
+                <li>
+                    <a href="##"></a>
+                </li>
+                <li>
+                    <a href="##"></a>
+                </li>
+                <li>
+                    <a href="##"></a>
+                </li>
+                <li>
+                    <a href="##"></a>
+                </li>
+                <li>
+                    <a href="##"></a>
+                </li>
+            </ol>
+        </div>
+        <div class="floor">
+            <a href="javascript:;" class="blod one">
+                <span>货比三家</span>
+            </a>
+            <a href="javascript:;" class="two">
+                <span>1F
+                    <br>苹果国行</span>
+            </a>
+            <a href="javascript:;" class="three">
+                <span>2F
+                    <br>品牌大咖</span>
+                <a href="javascript:;" class="four">
+                    <span>3F
+                        <br>爆款推荐</span>
+                </a>
+                <a href="javascript:;" class="five">
+                    <span>︿</span>
+                </a>
+        </div>
+    </div>
+    </div>
+    <script src="JS/jquery.js"></script>
+    <script src="JS/jquery.lazyload.js"></script>
+    <script src="JS/jquery.loading.js"></script>
+    <script src="JS/countdown.js"></script>
+    <script src="JS/jquery.menu.js"></script>
+    <script src="JS/jquery.banner.js"></script>
+    <script src="JS/jquery.floor.js"></script>
+    <script src="JS/slide.js"></script>
+    <script src="JS/juyery.huadong.js"></script>
+</body>
+
+</html>

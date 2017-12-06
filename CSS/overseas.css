@@ -1,0 +1,1610 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
+body, button, input, select, textarea { font:12px "微软雅黑",tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight:normal;} 
+address, cite, dfn, em,i,var { font-style:normal; } 
+code, kbd, pre, samp { font-family:"微软雅黑",couriernew, courier, monospace; } 
+small{ font-size:12px; } 
+ul, ol{ list-style:none; } 
+a { text-decoration:none; } 
+a:hover { text-decoration:none; } 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; }
+legend { color:#000; } 
+fieldset, img,button,input{ border:0; outline: medium; } 
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+/* ############font#### */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../icon/iconfont/iconfont.eot');
+  src: url('../icon/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../icon/iconfont/iconfont.woff') format('woff'),
+  url('../icon/iconfont/iconfont.ttf') format('truetype'),
+  url('../icon/iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* ###########清除浮动################ */
+.clearfix::after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.clearfix{
+	*zoom:1;
+}
+.w{
+	margin:0 auto;
+	width: 1200px;
+}
+.top{
+	/* height: 160px; */
+	/* 由于给.top设置了高度，而包在top里的new-menu使top的实际值超过了160.
+	不管怎样，new-menu是top的子元素，高度不够，子元素只是溢出。但是没有掩藏。
+	表象是正确的，但是在top后面在写slide时，slide就会盖住new-menu */
+	/* background: pink; */
+}
+/*###############toolbar的开始#####################*/
+.toolbar{
+	/* background: purple; */
+	height: 38px;
+}
+.toolbar .toolbar-left{
+	float: left;
+	width: 107px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 12px;
+}
+.toolbar-left .login {
+	color: #e10808;
+}
+.toolbar-left a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.toolbar-left i{
+	display: inline-block;
+	*zoom: 1; 
+	vertical-align:middle;
+	margin: -4px 3px 0;
+	width: 0;
+	height: 10px;
+	border: 1px solid #b5b5b5;
+}
+.toolbar-left .register{
+	color: #686868;
+}
+/*##########右边导航###########*/
+.toolbar .toolbar-right{
+	float: right;
+}
+.toolbar-right ul>li{
+	float: left;
+	width: 82px;
+	height: 36px;
+	line-height: 36px;
+	cursor: pointer;
+	position: relative;
+}
+.toolbar-right ul>li>a{
+	/* position: absolute; */
+	/* 关于定位问题 */
+	position: relative;
+	z-index: 100;
+	color: #898989;
+	width: 70px;
+	height: 36px;
+	padding-left:10px;
+	/* text-indent: 10px; */
+	display: inline-block;
+	*zoom: 1;
+	border: 1px solid transparent; 
+	border-top:none;
+}
+.toolbar-right ul>li>i{
+	display: inline-block;
+	*zoom: 1; 
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	right: 5px;
+	top: 17px;
+	background: url("../images/duc/sprites2.png") no-repeat -34px -117px;
+}
+.toolbar-right ul .my-msg a{
+	position: relative;
+}
+.toolbar-right ul .my-msg a span{
+	position: absolute;
+	top: 2px;
+	right: 10px;
+    color: #ffffff;
+    background-color: #e10808;
+    font-size: 12px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    line-height: 14px;
+    text-align: center;
+}
+/* li中。toolbar-my的样式 */
+.toolbar-right ul li .toolbar-my{
+	position: absolute;
+	top: 36px;
+	right: -80px;
+	width: 160px;
+	background: #fff;
+	border: 1px solid #ccc;
+	display: none;
+	z-index: 10;
+}
+.toolbar-right ul li .toolbar-my li{
+	float: left;
+}
+.toolbar-right ul li .toolbar-my a{
+	color: #898989;
+	height: 25px;
+	line-height: 25px;
+	padding:0 10px;
+}
+.toolbar-right ul>li:hover>a{
+	color: #e10808;
+	border-left:1px solid #ccc; 
+	border-right:1px solid #ccc; 
+	border-bottom: 1px solid #fff;
+}
+.toolbar-right ul li:hover i{
+	background: url("../images/duc/sprites2.png") no-repeat -47px -117px;
+}
+.toolbar-right ul li:hover>.toolbar-my{
+	display: block;
+}
+.toolbar-right ul li .toolbar-my a:hover{
+	color: #e10808;
+}
+/* li中.toolbar-msg的样式 */
+.toolbar-right ul li .toolbar-msg{
+	position: absolute;
+	top: 36px;
+	left: 0px;
+	width: 244px;
+	background:#fff;
+	border: 1px solid #ccc;
+	display: none;
+	padding-left: 10px;
+	z-index: 10;
+}
+.toolbar-right ul li .toolbar-msg p{
+	line-height: 50px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.toolbar-right ul li:hover .toolbar-msg{
+	display: block;
+	color: #898989;
+}
+/* li中.toolbar-focus的样式 */
+.toolbar-right ul li .toolbar-server{
+	position: absolute;
+	top: 36px;
+	right: 0;
+	width: 170px;
+	background: #fff;
+	border:1px solid #ccc;
+	display: none;
+	z-index: 10;
+}
+.toolbar-right ul li .toolbar-server a{
+	display: block;
+	color:#898989; 
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	float: left;
+}
+.toolbar-right ul li .toolbar-server .toolbar-tel{
+	font-weight:700px;
+	padding: 0 10px;
+	float:none;
+}
+.toolbar-right ul li .toolbar-server .server{
+	width: 160px;
+	border-top:1px dashed #ccc;
+}
+.toolbar-right ul li:hover .toolbar-server{
+	display: block;
+}
+.toolbar-right ul li .toolbar-server .server a:hover{
+	color: #e10808;
+}
+.toolbar-right ul li .toolbar-server .server .toolbar-tel:hover{
+	color: #898989;
+}
+/* li中的.toolbar-focus的样式 */
+.toolbar-right ul li .toolbar-focus{
+	position: absolute;
+	top: 36px;
+	right:0 ;
+	width: 176px;
+	padding: 10px 10px 0;
+	background: #fff;
+	border:1px solid #ccc;
+	display: none;
+	z-index: 10;
+}
+.toolbar-right ul li .toolbar-focus a{
+	display: block;
+	width: 84px;
+	padding: 83px 0 0;
+	color: #898989;
+	text-align: center;
+	line-height: 25px;
+	height: 25px;
+	/* margin: 0 10px; */
+	/* 一个元素加了浮动，在家margin会出现浮动不生效 */
+	/* overflow: hidden; */
+}
+.toolbar-right ul li .toolbar-focus .ios{
+	float: left;
+	background: url("../images/duc/tuomi10.jpg") -2px -2px no-repeat;
+}
+.toolbar-right ul li .toolbar-focus .android{
+	float: right;
+	background: url("../images/duc/tuomi10.jpg") -92px -2px no-repeat;
+}
+.toolbar-right ul li .toolbar-focus .wx{
+	float: left;
+	background: url("../images/duc/tuomi10.jpg") 0px -117px no-repeat;
+}
+.toolbar-right ul li .toolbar-focus .wb{
+	float: right;
+	background: url("../images/duc/tuomi10.jpg") -92px -117px no-repeat;
+}
+.toolbar-right ul li:hover .toolbar-focus{
+	display: block;
+}
+.toolbar-right ul li .toolbar-focus a:hover{
+	color: #e10808;
+}
+/* ############log########### */
+.top-layout{
+	/* background: gray; */
+	height: 80px;
+	padding: 25px 0 10px;
+}
+.top-layout .logo{
+	float: left;
+	width: 430px;
+}
+.top-layout .logo h1{
+	float: left;
+}
+.top-layout .logo h1 a{
+	display: block;
+	width:250px;
+	height: 80px;
+	text-indent: -999px;
+	background: url(../images/duc/logo.png) 0 0 no-repeat;
+}
+.top-layout .logo>a{
+	float: right;
+	display: block;
+	width: 144px;
+	height: 80px;
+	background: url("../images/duc/2b4f38a73a55ce2044dcf87e506481ab.gif") 0 0 no-repeat;
+}
+/* ######search######### */
+.top-layout .top-search{
+	float: left;
+	/* padding: 10px 0 0 30px; */
+	/* 此处加了浮动，在加margin仍然有效果 */
+	margin: 10px 0 0 30px;
+	width: 430px;
+	height: 57px;
+	position: relative;
+}
+.top-search .search #ip{
+	display: block;
+	width: 408px;
+	height: 22px;
+	padding: 5px;
+	border: 1px solid #e10808;
+	background: #fff;
+	outline: none;
+	/* position: relative; */
+	/* 可见子元素只是相对与其最近的有定位的父元素或者祖先元素
+	进行定位 */
+}
+.top-search .search #sb{
+	display: block;
+	width: 46px;
+	height: 32px;
+	outline: 0;
+	border: none;
+	position: absolute;
+	top: 1px;
+	right: 11px;
+	text-indent: -999px;
+}
+.top-search .search i{
+	display: block;
+	width: 46px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	position: absolute;
+	top: 1px;
+	right: 11px;
+	font-size: 24px;
+	color: #fff;
+	background: #e10808;
+}
+/* ###########hot-search######### */
+.top-search .hot-query{
+	width: 430px;
+	height: 18px;
+	margin-top:5px; 
+}
+.top-search .hot-query li{
+	float: left;
+	margin-right: 12px;
+	font-size:12px; 
+}
+.top-search .hot-query .spacial{
+	display: none;
+}
+.top-search .hot-query .current a{
+	color: #e10808;
+}
+.top-search .hot-query li a{
+	color: #444;
+}
+.top-search .hot-query li:hover a{
+	text-decoration: underline;
+}
+/* #######shop-car###### */
+.top-layout .shop-car{
+	float: right;
+	width: 135px;
+	height: 33px;
+	margin-top: 10px;
+}
+.top-layout .shop-car a{
+	position: relative;
+	display: block;
+	width: 117px;
+	height: 20px;
+	line-height: 20px;
+	padding: 6px 8px;
+	color: #232323;
+	border: 1px solid #eaeaea;
+	font-size: 12px;	
+}
+.top-layout .shop-car a span{
+	float: left;
+	display: block;
+	width: 22px;
+	height: 22px;
+	margin-right: 15px;
+	background: url("../images/duc/tuomi2.png") -188px -60px no-repeat;
+}
+.top-layout .shop-car a i{
+	display: block;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	top: -10px;
+	left: 25px;
+	color: #fff;
+	background: #e10808;
+}
+.top-layout .shop-car a:hover{
+	color: #e10808;
+	border-color:#e10808; 
+}
+/* ##########new-menu########### */
+.new-menu{
+	width: 100%;
+	margin-top: 10px;
+	background: #e10808;
+}
+.new-menu ul{
+	height: 38px;
+	position: relative;
+}
+.new-menu ul>li{
+	float: left;
+	width: 150px;
+	height: 38px;
+}
+.new-menu ul>li:first-child{
+	width: 156px;
+	padding-left: 18px;
+}
+.new-menu ul>.spacial{
+	width: 210px;
+	float: right;
+}
+.new-menu ul>li:first-child a i{
+	display: inline-block;
+	*zoom:1;
+	width: 20px;
+	height: 20px;
+	margin-right: 14px;
+	vertical-align: middle;
+	background: url(../images/duc/tuomi7.png) -387px -132px no-repeat;
+}
+.new-menu ul>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 38px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+
+}
+.new-menu ul>li:hover{
+	background-color: #c40705;
+}
+.new-menu ul .spacial:hover{
+	background-color: transparent;
+}
+.new-menu ul .sea:hover{
+	background-color: transparent;
+}
+.new-menu ul>.type-nav:hover .sale-list-wrapper{
+	display: block;
+	z-index: 10;
+}
+.new-menu .sale-list-wrapper{
+	display: none;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	/* height: 360px; */
+}
+.new-menu .sale-list-wrapper .sale-list-nav{
+	width: 174px;
+	height: 360px;
+	background: rgba(0,0,0,.8);
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li{
+	height: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	color: #fff;
+	padding: 0 10px 0 23px;
+	font-family: "Microsoft Yahei";
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li span{
+	display: inline-block;
+	*zoom:1;
+	height: 18px;
+	width: 18px;
+	overflow: hidden;
+	margin: 13px 18px 0 0;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li i{
+	float: right;
+	display: inline-block;
+	*zoom:1;
+	width: 10px;
+	height: 18px;
+	margin-top: 15px;
+	background: url("../images/duc/tuomi7.png") -590px -54px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li .sale-list-item{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 174px;
+	width: 226px;
+	height: 360px;
+	padding: 0 30px;
+	background-color: #f8f8f8;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li .sale-list-item a{
+	display: inline-block;
+	*zoom:1;
+	height: 45px;
+	line-height: 45px;
+	margin-right: 10px;
+	color: #878787;
+	font-size: 12px;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover .sale-list-item{
+	display: block;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover .sale-list-item a:hover{
+	color: #e10808;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li .list-nav-icon1{
+	background: url(../images/duc/tuomi2.png) 0 -40px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li .list-nav-icon2{
+	background: url(../images/duc/tuomi2.png) -19px -40px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li .list-nav-icon3{
+	background: url(../images/duc/tuomi2.png) -40px -40px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li .list-nav-icon4{
+	background: url(../images/duc/tuomi2.png) -59px -40px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li .list-nav-icon5{
+	background: url(../images/duc/tuomi2.png) -81px -40px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li .list-nav-icon6{
+	background: url(../images/duc/tuomi2.png) -102px -40px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li .list-nav-icon7{
+	background: url(../images/duc/tuomi2.png) -125px -40px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li .list-nav-icon8{
+	background: url(../images/duc/tuomi2.png) -152px -40px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover .list-nav-icon1{
+	background: url(../images/duc/tuomi2.png) 0 -60px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover .list-nav-icon2{
+	background: url(../images/duc/tuomi2.png) -19px -60px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover .list-nav-icon3{
+	background: url(../images/duc/tuomi2.png) -40px -60px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover .list-nav-icon4{
+	background: url(../images/duc/tuomi2.png) -59px -60px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover .list-nav-icon5{
+	background: url(../images/duc/tuomi2.png) -81px -60px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover .list-nav-icon6{
+	background: url(../images/duc/tuomi2.png) -102px -60px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover .list-nav-icon7{
+	background: url(../images/duc/tuomi2.png) -125px -60px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover .list-nav-icon8{
+	background: url(../images/duc/tuomi2.png) -152px -60px no-repeat;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover{
+	color: #e10808;
+	background-color: #f8f8f8;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover .sale-list-item{
+	display: block;
+}
+.new-menu .sale-list-wrapper .sale-list-nav ol li:hover i{
+	background: url(../images/duc/tuomi7.png) -578px -54px no-repeat;
+}
+/* ############box########### */
+.box{
+	width: 1903px;
+}
+.box .slide{
+	width: 100%;
+	background: gray;
+	position: relative;
+	overflow: hidden;
+	height: 360px;
+}
+.slide ul{
+	position: absolute;
+	width: 400%;
+	left: 0;
+}
+.slide ul li{
+	float: left;
+	width: 1903px;
+	overflow: hidden;
+}
+.slide ul li a{
+	display: block;
+	width: 100%;
+	height: 360px;
+}
+.slide>a{
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 30px;
+	height: 70px;
+	z-index: 10;
+	opacity: 0;
+}
+.slide #prev{
+	left: 50%;
+	margin: -35px 0 0 -650px;
+	background: url(../images/overseas/slide/home_sprites.v2.png) -205px -290px no-repeat;
+}
+.slide #next{
+	right:50%;
+	margin: -35px -650px 0 0;
+	background: url(../images/overseas/slide/home_sprites.v2.png) -238px -290px no-repeat;
+}
+/* 以后可以作为轮播上下页的一个标准 */
+/* .slide>.active{
+	opacity: .8;
+} */
+.slide:hover>a{
+	opacity: .6;
+}
+.slide>a:hover{
+	opacity: .8;
+}
+/* dot */
+.slide .dot{
+	position: absolute;
+	bottom:36px;
+	left: 50%;	
+	margin-left: -55px;
+}
+.slide .dot li{
+	float: left;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	border-radius: 50%;
+	margin:0 4px;
+	background: #5d5b5e;
+	opacity: .5;
+	/* filter:alpha(50); */
+	z-index: 10;
+}
+.slide .dot .active{
+	background: #fff;
+}
+/* 此处轮播，图片宽度超过屏幕宽度，让li定宽，让图片变成背景图
+背景图是可以改变位置的 */
+/* #############banner########### */
+.content1 .compare{
+	margin-top: 30px;
+	/* height: 40px; */
+	font-size: 16px;
+	border-bottom: 2px solid #000;
+	/* border-top: 2px solid #fff; */
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+	color: #444;
+}
+.compare h2{
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 600;
+	font-family: 微软雅黑;
+	color: #000;
+	border-bottom: 4px solid #000;
+	/* border-top: 4px solid #fff; */
+}
+.content1 ul{
+	border-left: 1px solid #eaeaea;
+	border-right: 1px solid #eaeaea;
+	
+}
+.content1 ul li{
+	float: left;
+	width: 398px;
+	height: 260px;
+	padding-bottom: 10px;
+}
+.content1 ul li .comp-img{
+	float: left;
+	padding: 30px 20px;
+	width: 170px;
+	text-align: center;
+	
+}
+.content1 ul li .comp-img a{
+	display: block;
+}
+.content1 ul li .comp-info{
+	float: left;
+	padding: 30px 20px;
+	width: 140px;
+}
+.content1 ul li .comp-info h2 i{
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+	width: 54px;
+	height: 54px;
+	vertical-align: bottom;
+}
+.content1 ul li .comp-info h2{
+	color: #696969;
+	font-size: 22px;
+}
+.content1 ul li .comp-info h2 .top-1{
+	background:  url(../images/overseas/hot/iconSprites.png) 0 0 no-repeat;
+}
+.content1 ul li .comp-info h2 .top-2{
+	background:  url(../images/overseas/hot/iconSprites.png) -55px 0 no-repeat;
+}
+.content1 ul li .comp-info h2 .top-3{
+	background:  url(../images/overseas/hot/iconSprites.png) -109px 0 no-repeat;
+}
+.content1 ul li .comp-info .info{
+	width: 140px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	display: block;
+	color: #000;
+	overflow: hidden;
+}
+.content1 ul li .comp-info .news{
+	width: 140px;
+	height: 32px;
+	line-height: 16px;
+	color: #767676;
+	display: block;
+	font-size: 14px;
+	overflow: hidden;
+}
+.content1 ul li .comp-info p{
+	color: #e10808;
+	line-height: 40px;
+	height: 44px;
+	font-weight: 600;
+	font-size: 14px;
+}
+.content1 ul li .comp-info p b{
+	font-size: 24px;
+	margin-left: 2px;
+}
+.content1 ul li .comp-info .btn{
+	display: block;
+	width: 98px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+	color: #e10808;
+	border-radius: 14px;
+	border: 1px solid #e10808;
+	text-align: center;
+}
+.content1 .mod{
+	margin-top: 10px;
+}
+/* 解决一个div中套一个a，a中套一个img，这样如果不给div，a，img做样式设置，只让img自己
+通过自己的宽高来撑起div，会造成div的高度多了几像素。解决方案：最直接的是给img加displa：block；就可以解决
+方法二，给a加 displa：block；且加一个和img相同的高度就可以解决*/
+.content1 .mod a img{
+	display: block;
+}
+/* ########flloor1###### */
+.content2 .mod-t,.content3 .mod-t,.content4 .mod-t{
+	margin-top: 30px;
+	border-bottom: 2px solid #000;
+	font-size: 16px;
+}
+.content2 .mod-t h2,.content3 .mod-t h2,.content4 .mod-t h2{
+	display: inline-block;
+	margin-right: 30px;
+	line-height: 36px;
+	/* box-sizing:border-box; */
+	border-bottom: 4px solid #000;
+	font-weight: bold;
+	font-size: 24px;
+	color: #000; 
+}
+.content2 .mod-t a,.content3 .mod-t a,.content4 .mod-t a{
+	float:right;
+	font-size: 18px;
+	color: #232323;
+}
+.content2 .mod-t a:hover,.content3 .mod-t a:hover,.content4 .mod-t a:hover{
+	color: #e10808;
+}
+.content2 .mod .mod-list li{
+	width: 240px;
+	height: 322px;
+	box-sizing: border-box;
+	overflow: hidden;
+	float: left;
+	border-right: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;	
+}
+.content2 .mod .mod-list li .mod-item{
+	height: 344px;
+	overflow: hidden;
+}
+.content2 .mod .mod-list li .mod-item .mod-img{
+	display: block;
+	margin-top: 15px;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+}
+/* ok-tag */
+.content2 .mod .mod-list li .mod-item .ok-tag{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	background: url(../images/overseas/sprites/tagsSprites.png) -314px -63px no-repeat;
+}
+.content2 .mod .mod-list li .mod-item .mod-img img{
+	display:inline-block;
+	transition:all .5s linear;
+	/* 千万记住，不给img加display：block，img会造成3px的误差 */
+}
+/* 由于li设置了weight：100%，但是有给他加了padding
+如果不改变盒子模型，盒子正常的尺寸是会发生变化的。
+如果不是指宽度100%,再加padding，就不用改变盒子模型了。
+ */
+.content2 .mod .mod-list li .mod-item .mod-img>a:hover img{
+	transform: translateY(-5px);
+}
+.content2 .mod .mod-list li .mod-item .mod-info{
+	padding: 10px;
+	/* 一会测试一下效果 */
+}
+.content2 .mod .mod-list li .mod-item .mod-info .v-info{
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: #e10808;
+}
+.content2 .mod .mod-list li .mod-item .mod-info .v-info img{
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+.content2 .mod .mod-list li .mod-item .mod-info .v-info span{
+	padding: 0 4px;
+	margin-right:5px ;
+	border: 1px solid #e10808;
+	background: #ff9696;
+	color: #fff;
+	font-size: 12px;
+	display: inline-block;
+}
+.content2 .mod .mod-list li .mod-item .mod-info>a{
+	height: 40px;
+	line-height: 20px;
+	color: #232323;
+	overflow: hidden;
+	display: block;
+	cursor:pointer;
+	font-weight: bold;
+}
+.content2 .mod .mod-list li .mod-item .mod-info>a:hover{
+	color: #e10808;
+}
+.content2 .mod .mod-list li .mod-item .mod-info .buy-info{
+	margin-top: 5px;
+	font-size: 14px;
+	color:#e10808;
+}
+.content2 .mod .mod-list li .mod-item .mod-info .buy-info span{
+	font-size: 14px;
+	color:#e10808;
+}
+.content2 .mod .mod-list li .mod-item .mod-info .buy-info span b{
+	font-weight: bold;
+	font-size: 18px;
+	color: #e10808;
+	margin-right: 2px;
+}
+.content2 .mod .mod-list li .mod-item .mod-info .buy-info .del{
+	color:#9b9b9b;
+	font-size: 12px;
+	text-decoration: line-through;
+	margin-left: 5px;
+}
+.content2 .mod .mod-list li .mod-item .mod-info .buy-info a{
+	display: block;
+	float:right;
+	padding: 5px 18px;
+	background: #e10808;
+	color: #fff;
+	height: 18px;
+	cursor: pointer;
+	border-radius: 15px;
+	font-size: 12px;
+}
+/* ############floor2########### */
+.content3 .mod .mod-list,.content4 .mod .mod-list{
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing:border-box;
+}
+.content3 .mod .mod-list ul li,.content4 .mod .mod-list ul li{
+	float: left;
+	/* border-left:1px solid #eaeaea; */
+	width: 240px;
+	height: 544px;
+	box-sizing:border-box;
+	text-align: center;
+	overflow: hidden;
+}
+.content3 .mod .mod-list ul .first-item,.content4 .mod .mod-list ul .first-item{
+	border-left:1px solid #eaeaea;
+	border-right:1px solid #eaeaea;
+}
+.content3 .mod .mod-list ul .first-item .mod-ad,.content4 .mod .mod-list ul .first-item .mod-ad{
+	width: 100%;
+	height: 272px;
+	border-bottom: 1px solid #eaeaea;
+	overflow: hidden;
+	box-sizing:border-box;
+}
+.content3 .mod .mod-list ul .mod-item,.content4 .mod .mod-list ul .mod-item{
+	border-bottom: 1px solid #eaeaea;
+	border-right: 1px solid #eaeaea;
+	height: 272px;
+	box-sizing:border-box;
+}
+.content3 .mod .mod-list ul .mod-item .mod-img,.content4 .mod .mod-list ul .mod-item .mod-img{
+	width: 100%;
+	box-sizing:border-box;
+/* 如果不谢box-sizing，只写width：100%，会是普通的content-box，加了padding会将盒子实际尺寸变大
+所以，在定位的时候，会出现偏移。解决方案，变成border-box盒子模型，或者直接将width：100%去掉 */
+	padding: 10px;
+	text-align: center;
+	position: relative;
+}
+/* ok-tag */
+.content3 .mod .mod-list li .mod-item .mod-img .ok-tag{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+}
+.content3 .mod .mod-list li .mod-item .mod-img .ok-tag-new{
+	background: url(../images/overseas/sprites/tagsSprites.png) -314px -61px no-repeat;	
+}
+.content3 .mod .mod-list li .mod-item .mod-img .ok-tag-buy{
+	background: url(../images/overseas/sprites/tagsSprites.png) -61px -61px no-repeat;	
+}
+.content3 .mod .mod-list ul .mod-item .mod-img a,.content4 .mod .mod-list ul .mod-item .mod-img a{
+	text-align: center;
+}
+.content3 .mod .mod-list ul .mod-item .mod-img a img,.content4 .mod .mod-list ul .mod-item .mod-img a img{
+	/* display: line-block; */
+	/* 由于转化为行内块，有兼容问题。需要解决兼容
+	如果转化为块元素，可以用margin：0 auto； */
+	display: block;
+	margin: 0 auto;
+	transition:all .5s linear;
+}
+.content3 .mod .mod-list ul .mod-item .mod-img a:hover img,.content4 .mod .mod-list ul .mod-item .mod-img a:hover img{
+	transform:translateY(-5px);
+}
+.content3 .mod .mod-list ul .mod-item .mod-info,.content4 .mod .mod-list ul .mod-item .mod-info{
+	/* text-align: center; */
+	width: 100%;
+	padding: 10px;
+}
+.content3 .mod .mod-list ul .mod-item .mod-info p,.content4 .mod .mod-list ul .mod-item .mod-info p{
+	color: #e10808;
+	font-size: 14px;
+	text-align: left;
+}
+.content3 .mod .mod-list ul .mod-item .mod-info p>span b,.content4 .mod .mod-list ul .mod-item .mod-info p>span b{
+	font-size: 18px;
+	color: #e10808;
+	margin-right: 2px;
+}
+.content3 .mod .mod-list ul .mod-item .mod-info p .del,.content4 .mod .mod-list ul .mod-item .mod-info p .del{
+	color:#9b9b9b;
+	font-size: 12px;
+	text-decoration: line-through;
+	margin-left: 5px;
+}
+.content3 .mod .mod-list ul .mod-item .mod-info>a,.content4 .mod .mod-list ul .mod-item .mod-info>a{
+	height: 40px;
+	line-height: 20px;
+	display: block;
+	color: #232323;
+	overflow: hidden;
+	cursor:pointer;
+	/* word-break:break-all; */
+	text-align: left;
+}
+.content3 .mod .mod-list ul .mod-item .mod-info>a:hover,.content4 .mod .mod-list ul .mod-item .mod-info>a:hover{
+	color: #e10808;
+}
+/* ##########floor3########### */
+/* floor3的样式和floor2一样写在一起 */
+/* #########ok-nav########### */
+.ok-nav{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -180px;
+	margin-left: -660px;
+	width: 50px;
+	text-align: center;
+	border: 1px solid;
+	border-color: rgb(234,234,234);
+	box-sizing:border-box;
+}
+.ok-nav a{
+	display: block;
+	line-height: 36px;
+	text-align: center;
+	font-size:14px;
+	color:#000;
+	padding: 0 10px;
+}
+.ok-nav a:hover span{
+	color: #e10808;
+}
+.ok-nav a span{
+	display: block;
+	padding: 10px 0;
+	line-height: 20px;
+}
+.ok-nav .active{
+	font-weight: bold;
+	color:#fff;
+	background: #e10808;
+}
+.ok-nav .current{
+	height: 30px;
+}
+.ok-nav a .top{
+	padding: 5px;
+}
+/* ################gua############# */
+.gua{
+	width: 100%;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+	background: #f5f4f4;
+	padding: 10px 0;
+}
+.gua img{
+	display: block;
+}
+/* ######index-bottom############ */
+.index-bottom{
+	background: #f4f3f3;
+}
+.index-bottom .bottom-box{
+	margin-top: 50px;
+	height: 180px;
+}
+.index-bottom .bottom-box .bottom-box-left{
+	float: left;
+	text-align: center;
+	padding: 0 50px 0 20px;
+}
+
+.index-bottom .bottom-box .bottom-box-left .bottom-app-code{
+	width: 116px;
+	height: 116px;
+	margin-bottom: 5px;
+	background: url(../images/overseas/footer/indexBottomCode.png) bottom right no-repeat;
+}
+.index-bottom .bottom-box .bottom-box-left p{
+	font-size: 12px;
+	line-height: 13px;
+	color: #525252;
+}
+.index-bottom .bottom-box .bottom-box-center{
+	float: left;
+}
+.index-bottom .bottom-box .bottom-box-center ul li{
+	padding: 0 35px 0 32px;
+	border-right: 1px solid #eaeaea;
+	float: left;
+}
+.index-bottom .bottom-box .bottom-box-center ul li h3{
+	color: #525252;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.index-bottom .bottom-box .bottom-box-center ul li a{
+	display: block;
+	font-size: 16px;
+	line-height: 40px;
+	color: #535353;
+}
+.index-bottom .bottom-box .bottom-box-center ul li a:hover{
+	text-decoration: underline;
+}
+.index-bottom .bottom-box .bottom-box-right{
+	float:left;
+	margin-left: 30px;
+}
+.index-bottom .bottom-box .bottom-box-right .contact-us{
+	float:left;
+
+}
+.index-bottom .bottom-box .bottom-box-right .contact-us h3{
+	color: #525252;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.index-bottom .bottom-box .bottom-box-right .contact-us p{
+	font-size: 16px;
+	line-height: 25px;
+	padding-top: 5px;
+	color: #535353;
+}
+.index-bottom .bottom-box .bottom-box-right .contact-us .contact-advice{
+	border:1px solid #d3d0d2;
+	width: 95px;
+	height: 26px;
+	margin-top: 6px;
+	border-radius: 5px;
+	background: #f2f2f2;	
+	cursor: pointer;
+	text-align: center;
+	line-height: 26px;
+	color: #444;
+	font-size: 14px;
+}
+.index-bottom .bottom-box .bottom-box-right .attention-us{
+	padding-left: 70px;
+	float: left;
+	position: relative;
+}
+.index-bottom .bottom-box .bottom-box-right .attention-us h3{
+	color: #525252;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.index-bottom .bottom-box .bottom-box-right .attention-us .weiXin{
+	float: left;
+	width: 44px;
+	height: 45px;
+	margin: 10px 20px 0 0;
+	background: url(../images/overseas/footer/indexBottom.png) -8px 0 no-repeat;
+}
+.index-bottom .bottom-box .bottom-box-right .attention-us .weiXin .weiXinCode{
+	display: none;
+	width: 122px;
+	height: 130px;
+	background: url(../images/overseas/footer/indexBottomCode.png) 0 -134px no-repeat;
+	position: absolute;
+	top: 92px;
+	left: 30px;
+}
+.index-bottom .bottom-box .bottom-box-right .attention-us .weiXin:hover{
+	background: url(../images/overseas/footer/indexBottom.png) -53px 0 no-repeat;
+}
+.index-bottom .bottom-box .bottom-box-right .attention-us .weiXin:hover .weiXinCode{
+	display: block;
+}
+.index-bottom .bottom-box .bottom-box-right .attention-us .weiBo{
+	float: left;
+	width: 45px;
+	height: 45px;
+	margin-top: 10px;
+	background: url(../images/overseas/footer/indexBottom.png) -8px -45px  no-repeat;
+}
+.index-bottom .bottom-box .bottom-box-right .attention-us .weiBo .weiBoCode{
+	display: none;
+	width: 122px;
+	height: 130px;
+	background: url(../images/overseas/footer/indexBottomCode.png) 0 -7px no-repeat;
+	position: absolute;
+	top: 92px;
+	left: 100px;
+}
+.index-bottom .bottom-box .bottom-box-right .attention-us .weiBo:hover{
+	background: url(../images/overseas/footer/indexBottom.png) -53px -45px no-repeat;
+}
+.index-bottom .bottom-box .bottom-box-right .attention-us .weiBo:hover .weiBoCode{
+	display: block;
+}
+/* okhqb_feed */
+
+
+
+/* ################foot-nav############ */
+.footer{
+	margin-top: 30px;
+	color: #444;
+}
+.footer .footer-nav{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color:#ccc;
+}
+.footer .footer-nav a{
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 12px;
+	color: #666;
+	vertical-align: baseline;
+}
+.footer .footer-copy{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 12px;
+	color:#666;
+}
+.footer .footer-copy a{
+	color:#232323;
+}
+.footer-link{
+	width: 100%;
+	margin-top: 20px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+}
+.footer-link a{
+	display: inline-block;
+	text-align: center;
+	height: 49px;
+}
+.footer-link a img{
+	display: inline-block;
+}
+.footer-link a:nth-child(1){
+	width: 143px;
+	background: url(../images/overseas/footer/indexBottom.png) 0 -91px no-repeat;
+}
+.footer-link a:nth-child(2){
+	width: 143px;
+	background: url(../images/overseas/footer/indexBottom.png) 0 -140px no-repeat;
+}
+.footer-link a:nth-child(3){
+	width: 151px;
+	background: url(../images/overseas/footer/indexBottom.png) 0 -189px no-repeat;
+}
+.footer-link a:nth-child(4){
+	width: 194px;
+	background: url(../images/overseas/footer/indexBottom.png) 0 -238px no-repeat;
+}
+.footer-link a:nth-child(6) img{
+	margin-bottom: 4px;
+}
+/* feedback */
+.mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.mask .pop{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:-127px 0 0 -155px;
+	width: 310px;
+	height: 254px;
+	background: #fff;
+	position: relative;
+}
+.mask .pop .feedback .top{
+	height: 34px;
+	line-height: 34px;
+	padding: 0 28px 0 10px;
+	font-size: 16px;
+	font-weight: bold;
+	background: #1b91eb;
+	color: #fff;
+}
+.mask .pop .feedback a{
+	display: block;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 28px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+}
+.mask .pop .content{
+	padding: 20px 25px;
+}
+.mask .pop .content textarea{
+	width: 260px;
+	height: 80px;
+	border:1px solid #D9D9D9;
+	margin-top: 15px; 
+	line-height: 1.5;
+	color: #D9D9D9;
+	resize:none;
+}
+.mask .pop .content input{
+	width: 260px;
+	height: 22px;
+	border:1px solid #D9D9D9;
+	margin-top: 10px; 
+	line-height: 1.5;
+	color: #D9D9D9;
+}
+.mask .pop .content .btn{
+	float: right;
+	display: block;
+	width: 60px;
+	height: 24px;
+	background: url(../images/overseas/help_tijiao.jpg) 0 0 no-repeat;
+	margin-top: 10px;
+	cursor:pointer;
+	border: none;
+	outline:none;
+}
+/* mult-bar */
+.mult-bar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 36px;
+	background: #2a2828;
+	z-index: 100;
+}
+.mult-bar .mult-bar-icon{
+	position: absolute;
+	right: 0;
+	top: 21%;
+	bottom: 0;
+	/* 在绝对定位中，给了top，再给bottom可以定义一个轴向上的宽度 */
+	width: 36px;
+}
+.mult-bar .mult-bar-icon .new-user{
+	width: 36px;
+	height: 36px;
+	padding: 10px 0;
+	border-bottom: 1px solid #515d76;
+}
+.mult-bar .mult-bar-icon .new-user .remind-icon{
+	width: 36px;
+	height: 36px;
+	z-index: 200;
+	background-image: url(../images/overseas/right_nav_sprites.png) ;
+	background-position:  0 -253px ;
+}
+.mult-bar .mult-bar-icon a{
+	display: block;
+	cursor:pointer;
+}
+.mult-bar .mult-bar-icon .login-panel{
+	width: 36px;
+	height: 36px;
+	padding-top: 10px;
+	position: relative;
+}
+.mult-bar .mult-bar-icon .login-panel .login-i{
+	width: 36px;
+	height: 36px;
+	z-index: 200;
+	background-image:url(../images/overseas/right_nav_sprites.png) ;
+	background-position: 0 0;
+}
+.mult-bar .mult-bar-icon .login-panel:hover .login-pop{
+	display: block;
+}
+.mult-bar .mult-bar-icon .login-panel .login-pop{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: -342px;
+	width: 270px;
+	padding: 15px 35px;
+	z-index: 200;
+	background: #fff;
+	border: 1px solid #e2e7ee;
+	box-shadow: -3px 3px 5px -2px rgba(55,55,55,0.4);
+	color: #444;
+	font-size: 14px;
+	/* background: pink; */
+}
+.mult-bar .mult-bar-icon .login-panel .login-pop input{
+	display: block;
+	width: 260px;
+	line-height: 18px;
+	height: 18px;
+	margin: 5px 0 10px;
+	padding: 5px;
+	border:1px solid #e2e7ee; 
+}
+.mult-bar .mult-bar-icon .login-panel .login-pop form>a{
+	display: block;
+	width: 270px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 15px;
+	color: #fff;
+	border:0;
+	background: #206eef;
+	text-align: center;
+}
+.mult-bar .mult-bar-icon .login-panel .login-pop p{
+	text-align: right;
+	margin-top: 5px;
+}
+.mult-bar .mult-bar-icon .login-panel .login-pop p>a{
+	color:#206eef;
+}
+
+.mult-bar .mult-bar-icon .mini-car{
+	padding: 8px 0 10px;
+	height: 126px;
+	width: 36px;
+	position: relative;
+}
+.mult-bar .mult-bar-icon .mini-car .box{
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 20px;
+	height: 127px;
+	border-top: 1px solid #515d76; 
+	border-bottom: 1px solid #515d76;
+}
+.mult-bar .mult-bar-icon .mini-car .car{
+	padding-top: 13px;
+	z-index: 200;
+	height: 104px;
+	text-align: center;
+}
+.mult-bar .mult-bar-icon .mini-car .car span{
+	display: block;
+	width: 20px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 12px;
+}
+.mult-bar .mult-bar-icon .mini-car .car i{
+	display: block;
+	margin: 0 auto;
+	width: 28px;
+	height: 26px;
+	z-index: 150;
+	background: url(../images/overseas/right_nav_sprites.png) -4px -220px no-repeat;
+}
+.mult-bar .mult-bar-icon .mini-car .car em{
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+	width: 23px;
+	height: 23px;
+	line-height: 23px;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 50%;
+	background: #e10808;
+} 
+.mult-bar .car-con-box{
+	display: none;
+	position: absolute;
+	right: 35px;
+	padding: 15px;
+	padding-left: 10px;
+	height: 100%;
+	background: #fff;
+	box-shadow: -4px 0px 2px #b2b2b2;
+	z-index: 200;
+	color: #444;
+}
+.mult-bar .car-con-box h2{
+	width: 250px;
+	line-height: 35px;
+	border-bottom: 1px solid #dedcdc;
+	font-size: 14px;
+}
+.mult-bar .car-con-box h2 .nav-car-times{
+	font-size: 12px;
+	margin-left: 10px;
+	color: #fd2b4d;
+}
+.mult-bar .car-con-box h2 .nav-car-close{
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	float: right;
+	width: 18px;
+	height: 18px;
+	margin: 8px 10px 0 0;
+	cursor:pointer;
+	background: url(../images/overseas/right_nav_sprites.png) 0 -153px no-repeat;
+}
+.mult-bar .car-con-box .car-con .car-list-box{
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #f0f0f0;
+}
+.mult-bar .car-con-box .car-con .car-list-total{
+	padding: 10px 0;
+	margin-top: 20px;
+}
+.mult-bar .car-con-box .car-con .car-list-total span{
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	width: 80px;
+	height: 35px;
+}
+.mult-bar .car-con-box .car-con .car-list-total span .car-total-price{
+	color: #fd2b4d;
+	font-weight: bold;
+}
+.mult-bar .car-con-box .car-con .car-list-total span .car-total-num{
+	color: #8d8d8d;
+	font-weight: normal;
+}
+.mult-bar .car-con-box .car-con .car-list-total>a{
+	float: right;
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	width: 130px;
+	height: 36px;
+	line-height: 36px;
+	background: #fd2b4d;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+}
+.mult-bar .mult-bar-icon .tel{
+	margin-bottom: 5px;
+	position: relative;
+}
+.mult-bar .mult-bar-icon .tel i{
+	display: block;
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	background:url(../images/overseas/right_nav_sprites.png) 0 -38px no-repeat;
+}
+.mult-bar .mult-bar-icon .tel a{
+	padding: 34px 12px 0;
+	margin: 0 auto;
+	width: 12px;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	z-index: 200;
+}
+.mult-bar .mult-bar-icon>div:hover>a{
+	background-color: #e10808;
+}
+.mult-bar .mult-bar-icon .scrollTop{
+	position: absolute;
+	bottom: 30%;
+	/* display: block; */
+	display: none;
+}
+.mult-bar .mult-bar-icon .scrollTop a{
+	display: block;
+	width: 36px;
+	height: 36px;
+	background: url(../images/overseas/right_nav_sprites.png) 0 -113px no-repeat;
+}
+
